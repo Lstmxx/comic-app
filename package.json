@@ -2,7 +2,9 @@
 	"scripts": {
 		"postinstall": "husky install",
 		"commit": "cz",
-		"prepare": "husky"
+		"prepare": "husky",
+		"server-dev": "cd ./apps/server && pnpm run start:dev",
+		"web-dev": "cd ./apps/web && pnpm run dev"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^19.3.0",
