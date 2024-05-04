@@ -1,13 +1,16 @@
 import { SearchComicParams } from "@packages/types/dto/comic";
-import { IsInt, IsNotEmpty, IsNumberString } from "class-validator";
+import { IsBooleanString, IsNotEmpty, isNotEmpty, IsNumberString, IsString } from "class-validator";
 
 export class SearchComicDto implements SearchComicParams {
-  @IsNumberString()
+  @IsString()
   @IsNotEmpty()
+  q: string;
+  @IsNumberString()
   limit: number;
   @IsNumberString()
-  @IsNotEmpty()
   offset: number;
-  ordering: string;
+  @IsString()
+  q_type: string;
+  @IsBooleanString()
   _update: boolean;
 }
