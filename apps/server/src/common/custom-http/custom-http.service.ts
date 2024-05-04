@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import axios, { AxiosInstance, AxiosRequestConfig } from 'axios';
-import { CustomResponse } from './type';
+import { Response } from './type';
 
 const VERSION = 'v3';
 
@@ -38,14 +38,14 @@ export class CustomHttpService {
   async delete<T = any>(
     url: string,
     config?: AxiosRequestConfig,
-  ): Promise<CustomResponse<T>> {
+  ): Promise<Response<T>> {
     return (await this.instance.delete(url, config))?.data;
   }
 
   async get<T = any, C = any>(
     url: string,
     config?: AxiosRequestConfig<C>,
-  ): Promise<CustomResponse<T>> {
+  ): Promise<Response<T>> {
     return (await this.instance.get(url, config))?.data;
   }
 
@@ -56,14 +56,14 @@ export class CustomHttpService {
   async head<T = any>(
     url: string,
     config?: AxiosRequestConfig,
-  ): Promise<CustomResponse<T>> {
+  ): Promise<Response<T>> {
     return (await this.instance.head(url, config))?.data;
   }
 
   async options<T = any>(
     url: string,
     config?: AxiosRequestConfig,
-  ): Promise<CustomResponse<T>> {
+  ): Promise<Response<T>> {
     return (await this.instance.options(url, config))?.data;
   }
 
@@ -71,7 +71,7 @@ export class CustomHttpService {
     url: string,
     data?: D,
     config?: AxiosRequestConfig,
-  ): Promise<CustomResponse<T>> {
+  ): Promise<Response<T>> {
     return (await this.instance.patch(url, data, config))?.data;
   }
 
@@ -79,7 +79,7 @@ export class CustomHttpService {
     url: string,
     data?: D,
     config?: AxiosRequestConfig,
-  ): Promise<CustomResponse<T>> {
+  ): Promise<Response<T>> {
     return (await this.instance.post(url, data, config))?.data;
   }
 
@@ -87,7 +87,7 @@ export class CustomHttpService {
     url: string,
     data?: D,
     config?: AxiosRequestConfig,
-  ): Promise<CustomResponse<T>> {
+  ): Promise<Response<T>> {
     return (await this.instance.put(url, data, config))?.data;
   }
 }
