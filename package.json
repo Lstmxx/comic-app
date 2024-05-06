@@ -1,4 +1,9 @@
 {
+	"name": "copymanga-app",
+	"author": {
+		"name": "Lstmxx",
+		"email": "740719284@qq.com"
+	},
 	"scripts": {
 		"postinstall": "husky install",
 		"commit": "cz",

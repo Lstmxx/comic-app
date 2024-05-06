@@ -1,5 +1,5 @@
-import { ComicListParams } from "@packages/types/dto/comic";
-import { IsBooleanString, IsInt, IsNotEmpty, IsNumberString } from "class-validator";
+import { ComicListParams } from '@copymanga-app/types';
+import { IsBooleanString, IsNotEmpty, IsNumberString } from 'class-validator';
 
 export class ComicListDto implements ComicListParams {
   top: string;
