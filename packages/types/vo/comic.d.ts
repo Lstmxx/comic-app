@@ -118,4 +118,4 @@ export type ComicSearchList = {
   total: number;
   limit: number;
   offset: number;
-}
+};

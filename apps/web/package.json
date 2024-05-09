@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@copymanga-app/components": "workspace:^",
+    "@copymanga-app/types": "workspace:^",
     "next": "14.2.3",
     "prettier-eslint": "^16.3.0",
     "react": "^18",

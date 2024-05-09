@@ -17,10 +17,8 @@ export type Top = {
   path_word: string;
 };
 
-
 export type TagsRes = {
   theme: Theme[];
   ordering: Ordering[];
   top: Top[];
-}
-
+};
