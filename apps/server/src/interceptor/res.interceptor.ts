@@ -1,12 +1,21 @@
-import { CallHandler, ExecutionContext, HttpException, Injectable, NestInterceptor } from '@nestjs/common';
+import {
+  CallHandler,
+  ExecutionContext,
+  HttpException,
+  Injectable,
+  NestInterceptor,
+} from '@nestjs/common';
 import { map, Observable } from 'rxjs';
 
 @Injectable()
 export class ResInterceptor implements NestInterceptor {
   intercept(context: ExecutionContext, next: CallHandler): Observable<any> {
     return next.handle().pipe(
-      map(data => {
+      map((data) => {
         console.log('data', data);
+        if (!data) {
+          return data;
+        }
         const { code, results, message } = data;
         if (results) {
           if (code !== 200) {
@@ -18,8 +27,9 @@ export class ResInterceptor implements NestInterceptor {
             data: results,
           };
         }
+        console.log('origin data', data);
         return data;
-      })
+      }),
     );
   }
 }

@@ -1,3 +1,4 @@
+import AppBar from "./app-bar";
 import Footer from "./footer";
 
 export default function RootLayout({
@@ -5,5 +6,11 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return Footer();
+  return (
+    <div className="flex flex-col h-screen">
+      <AppBar />
+      <main className="flex-1">{children}</main>
+      <Footer />
+    </div>
+  );
 }

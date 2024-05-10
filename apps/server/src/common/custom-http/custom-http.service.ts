@@ -4,6 +4,16 @@ import { Response } from './type';
 
 const VERSION = 'v3';
 
+export const DEFAULT_HEADERS = {
+  origin: 'https://copymanga.site',
+  accept: 'application/json',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  'sec-fetch-site': 'cross-site',
+  'user-agent':
+    'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+};
+
 @Injectable()
 export class CustomHttpService {
   private instance: AxiosInstance;
@@ -17,15 +27,7 @@ export class CustomHttpService {
 
     instance.interceptors.request.use((config) => {
       const { headers } = config;
-      Object.assign(headers, {
-        origin: 'https://copymanga.site',
-        accept: 'application/json',
-        'sec-fetch-mode': 'cors',
-        'sec-fetch-dest': 'empty',
-        'sec-fetch-site': 'cross-site',
-        'user-agent':
-          'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
-      });
+      Object.assign(headers, DEFAULT_HEADERS);
       return config;
     });
     instance.interceptors.response.use((response) => {
