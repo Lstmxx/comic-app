@@ -1,4 +1,5 @@
 import AppBar from "./app-bar";
+import Content from "./content";
 import Footer from "./footer";
 
 export default function RootLayout({
@@ -9,7 +10,7 @@ export default function RootLayout({
   return (
     <div className="flex flex-col h-screen">
       <AppBar />
-      <main className="flex-1">{children}</main>
+      <Content>{children}</Content>
       <Footer />
     </div>
   );

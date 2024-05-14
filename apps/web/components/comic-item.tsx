@@ -25,7 +25,7 @@ const Author = ({ data }: { data: IAuthor }) => {
 
 export const ComicItm = ({ data }: { data: IComicItem }) => {
   return (
-    <div className="flex flex-col gap-2 group cursor-pointer transition">
+    <div className="flex flex-col group cursor-pointer transition text-sm">
       <div className="relative w-full pb-[128%] delay-150 duration-300 ease-in-out group-hover:scale-105 cursor-pointer">
         <img
           className="w-full h-full absolute left-0 top-0 rounded-lg object-cover"
@@ -33,18 +33,18 @@ export const ComicItm = ({ data }: { data: IComicItem }) => {
           alt={data.name}
         />
       </div>
-      <div className="flex transition-colors group-hover:text-[grey]">
+      <div className="flex transition-colors group-hover:text-[grey] mt-3">
         <h3 className="line-clamp-2 flex-1 m-0 font-medium" title={data.name}>
           {data.name}
         </h3>
       </div>
-      <div className="flex items-center text-sm text-muted-foreground flex-wrap">
+      <div className="flex items-center text-xs text-muted-foreground flex-wrap">
         <p>作者: </p>
         {data.author.map((author) => (
           <Author key={author.path_word} data={author} />
         ))}
       </div>
-      <p className="text-sm text-muted-foreground">
+      <p className="text-xs text-muted-foreground">
         更新时间：{data.datetime_updated}
       </p>
     </div>

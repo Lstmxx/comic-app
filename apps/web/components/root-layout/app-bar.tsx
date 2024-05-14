@@ -15,7 +15,7 @@ export default function AppBar() {
   ];
 
   return (
-    <header className="p-4 sticky top-0 shadow-sm bg-white z-50">
+    <header className="p-4 shadow-sm bg-white z-50">
       <div className="flex justify-between container">
         <nav className="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
           {menuList.map((menu, index) => (
