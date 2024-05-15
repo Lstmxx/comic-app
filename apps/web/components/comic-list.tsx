@@ -13,8 +13,8 @@ export default function ComicList({ list }: { list: IComicItem[] }) {
 
   return (
     <div className="grid grid-cols-3 gap-4 md:grid-cols-4 md:gap-6 lg:gap-12 xl:grid-cols-5 container">
-      {comicList.map((comic, index) => (
-        <ComicItm key={index} data={comic} />
+      {comicList.map((comic) => (
+        <ComicItm key={comic.path_word} data={comic} />
       ))}
     </div>
   );

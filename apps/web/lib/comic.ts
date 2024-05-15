@@ -39,3 +39,12 @@ export const getComicPage = async (params: ComicListParams) => {
 
   return data;
 };
+
+export const getComicDetail = async (comicId: string) => {
+  const data = await customFetch<ComicList>(`/comic/${comicId}`, {
+    method: "GET",
+    cache: "no-cache",
+  });
+
+  return data;
+};

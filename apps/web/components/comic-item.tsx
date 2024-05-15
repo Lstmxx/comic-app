@@ -1,16 +1,17 @@
 "use client";
-
-import { proxyImg } from "@/lib/fetch";
-import { arrayBufferToImgSrc } from "@/lib/img";
+import { useDrawerState } from "@/store/use-drawer-state";
 import {
   Author as IAuthor,
   ComicItem as IComicItem,
 } from "@copymanga-app/types";
-import { MouseEventHandler, useEffect, useMemo, useState } from "react";
+import { MouseEventHandler } from "react";
+import CustomImage from "./custom-image";
 
 const Author = ({ data }: { data: IAuthor }) => {
+  const { openAuthorDetail } = useDrawerState();
   const handleSearchAuthor: MouseEventHandler<HTMLSpanElement> = (event) => {
     event.stopPropagation();
+    openAuthorDetail(data.path_word);
     console.log(data.path_word);
   };
   return (
@@ -24,15 +25,33 @@ const Author = ({ data }: { data: IAuthor }) => {
 };
 
 export const ComicItm = ({ data }: { data: IComicItem }) => {
+  const { openComicDetail } = useDrawerState();
+
+  const handleOpenDetail = () => {
+    openComicDetail(data.path_word);
+  };
+
   return (
-    <div className="flex flex-col group cursor-pointer transition text-sm">
-      <div className="relative w-full pb-[128%] delay-150 duration-300 ease-in-out group-hover:scale-105 cursor-pointer">
+    <div
+      className="flex flex-col group cursor-pointer transition text-sm"
+      onClick={handleOpenDetail}
+    >
+      <CustomImage
+        className="w-full pb-[128%] delay-150 duration-300 ease-in-out group-hover:scale-105 cursor-pointer"
+        imgProps={{
+          src: data.cover,
+          alt: data.name,
+          className: "rounded-lg object-cover",
+          loading: "lazy",
+        }}
+      />
+      {/* <div className="relative w-full pb-[128%] delay-150 duration-300 ease-in-out group-hover:scale-105 cursor-pointer">
         <img
           className="w-full h-full absolute left-0 top-0 rounded-lg object-cover"
           src={data.cover}
           alt={data.name}
         />
-      </div>
+      </div> */}
       <div className="flex transition-colors group-hover:text-[grey] mt-3">
         <h3 className="line-clamp-2 flex-1 m-0 font-medium" title={data.name}>
           {data.name}

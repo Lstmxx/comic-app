@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@copymanga-app/types": "workspace:^",
+    "@radix-ui/react-dialog": "^1.0.5",
     "@radix-ui/react-navigation-menu": "^1.1.4",
     "@radix-ui/react-scroll-area": "^1.0.5",
     "@radix-ui/react-slot": "^1.0.2",
@@ -21,7 +22,9 @@
     "react": "^18",
     "react-dom": "^18",
     "tailwind-merge": "^2.3.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "vaul": "^0.9.1",
+    "zustand": "^4.5.2"
   },
   "devDependencies": {
     "@types/node": "^20",

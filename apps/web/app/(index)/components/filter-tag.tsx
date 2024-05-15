@@ -1,7 +1,8 @@
 import { TagsRes } from "@copymanga-app/types";
-import TagRow from "./tag-row";
+import TagRow from "../../../components/tag-row";
+import { getAllTag } from "@/lib/tag";
 
-export default async function FilterTag({ tags }: { tags: TagsRes }) {
+export default async function FilterTag() {
   const ALL = { label: "全部", value: "" };
   const filters: {
     key: keyof TagsRes;
@@ -18,12 +19,14 @@ export default async function FilterTag({ tags }: { tags: TagsRes }) {
       name: "主题",
       tags: [ALL],
     },
-    {
-      key: "ordering",
-      name: "排序",
-      tags: [],
-    },
+    // {
+    //   key: "ordering",
+    //   name: "排序",
+    //   tags: [],
+    // },
   ];
+
+  const tags = await getAllTag();
 
   filters.forEach((filter) => {
     tags[filter.key].forEach((tag) => {
