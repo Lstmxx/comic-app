@@ -1,4 +1,4 @@
-import { Response } from "@copymanga-app/types";
+import { Response } from "@comic-app/types";
 
 export const proxyImg = async (url: string) => {
   const apiHost = process.env.NEXT_PUBLIC_SERVER_API;

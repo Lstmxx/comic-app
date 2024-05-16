@@ -1,4 +1,4 @@
-import { TagsRes } from "@copymanga-app/types";
+import { TagsRes } from "@comic-app/types";
 import TagRow from "../../../components/tag-row";
 import { getAllTag } from "@/lib/tag";
 

@@ -119,3 +119,29 @@ export type ComicSearchList = {
   limit: number;
   offset: number;
 };
+
+export type IComicChapter = {
+  index: number;
+  uuid: string;
+  count: number;
+  ordered: number;
+  size: number;
+  name: string;
+  comic_id: string;
+  comic_path_word: string;
+  group_id: string | null;
+  group_path_word: string;
+  type: number;
+  img_type: number;
+  news: string;
+  datetime_created: string;
+  prev: string;
+  next: string;
+};
+
+export type IComicChapterRes = {
+  list: IComicChapter[];
+  total: number;
+  limit: number;
+  offset: number;
+};

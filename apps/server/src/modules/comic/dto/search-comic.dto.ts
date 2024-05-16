@@ -1,4 +1,4 @@
-import { SearchComicParams } from '@copymanga-app/types';
+import { ISearchComicParams } from '@comic-app/types';
 import {
   IsBooleanString,
   IsNotEmpty,
@@ -6,7 +6,7 @@ import {
   IsString,
 } from 'class-validator';
 
-export class SearchComicDto implements SearchComicParams {
+export class SearchComicDto implements ISearchComicParams {
   @IsString()
   @IsNotEmpty()
   q: string;

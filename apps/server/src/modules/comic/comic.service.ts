@@ -3,10 +3,16 @@ import {
   CustomHttpService,
   DEFAULT_HEADERS,
 } from 'src/common/custom-http/custom-http.service';
-import { ComicDetail, ComicList, ComicSearchList } from '@copymanga-app/types';
+import {
+  ComicDetail,
+  ComicList,
+  ComicSearchList,
+  IComicChapterRes,
+} from '@comic-app/types';
 import { ComicListDto } from './dto/comic-list.dto';
 import { SearchComicDto } from './dto/search-comic.dto';
 import { arrayBufferToImgSrc } from 'src/common/utils/img';
+import { ChapterDto } from './dto/chapter.dto';
 
 @Injectable()
 export class ComicService {
@@ -47,5 +53,19 @@ export class ComicService {
     const base64str = arrayBufferToImgSrc(await response.arrayBuffer());
 
     return base64str;
+  }
+
+  async getChapter(query: ChapterDto) {
+    const data = await this.customHttpService.get<IComicChapterRes>(
+      `/comic/${query.name}/group/${query.groupType}/chapters`,
+      {
+        params: {
+          limit: query.limit,
+          offset: query.offset,
+          _update: query._update,
+        },
+      },
+    );
+    return data;
   }
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import { ComicItem as IComicItem } from "@copymanga-app/types";
+import { ComicItem as IComicItem } from "@comic-app/types";
 import { ComicItm } from "./comic-item";
 import { useEffect, useState } from "react";
 

@@ -1,7 +1,7 @@
 "use client";
 
 import { updateListSearchParams } from "@/lib/comic";
-import { TagsRes } from "@copymanga-app/types";
+import { TagsRes } from "@comic-app/types";
 import { useRouter, useSearchParams } from "next/navigation";
 
 export default function TagRow({
@@ -16,7 +16,10 @@ export default function TagRow({
   const params = useSearchParams();
   const value = params.get(tagKey) || "";
   const handleClickTag = (v: string) => {
-    const paramsStr = updateListSearchParams(params, { [tagKey]: v });
+    const paramsStr = updateListSearchParams(params, {
+      [tagKey]: v,
+      page: "1",
+    });
     router.push(`?${paramsStr}`);
   };
   return (

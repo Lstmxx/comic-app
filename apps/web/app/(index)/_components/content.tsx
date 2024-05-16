@@ -1,18 +1,20 @@
+import ComicDetail from "@/components/comic-detail";
 import ComicList from "@/components/comic-list";
-import CustomPagination from "@/components/pagination";
+import CustomPagination from "./pagination";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { getComicPage } from "@/lib/comic";
-import { ComicListParams } from "@copymanga-app/types";
+import { IComicListParams } from "@comic-app/types";
 
 export default async function Content({
   params,
 }: {
-  params: Partial<ComicListParams>;
+  params: Partial<Omit<IComicListParams, "offset">> & { page?: string };
 }) {
+  const LIMIT = 20;
   const p = params ?? {};
   const comicPageData = await getComicPage({
-    limit: 20,
-    offset: p.offset ?? 0,
+    limit: LIMIT,
+    offset: (Number(p.page || "1") - 1) * LIMIT,
     ordering: "-datetime_updated",
     theme: p.theme ?? "",
     _update: false,
@@ -28,6 +30,7 @@ export default async function Content({
         total={comicPageData.total}
         limit={comicPageData.limit}
       />
+      <ComicDetail />
     </>
   );
 }

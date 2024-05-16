@@ -1,4 +1,4 @@
-import { TagsRes } from "@copymanga-app/types";
+import { TagsRes } from "@comic-app/types";
 import { customFetch } from "./fetch";
 
 export const getAllTag = async () => {

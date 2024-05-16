@@ -1,11 +1,9 @@
 "use client";
 import { useDrawerState } from "@/store/use-drawer-state";
-import {
-  Author as IAuthor,
-  ComicItem as IComicItem,
-} from "@copymanga-app/types";
+import { Author as IAuthor, ComicItem as IComicItem } from "@comic-app/types";
 import { MouseEventHandler } from "react";
 import CustomImage from "./custom-image";
+import { useRouter } from "next/navigation";
 
 const Author = ({ data }: { data: IAuthor }) => {
   const { openAuthorDetail } = useDrawerState();
@@ -25,10 +23,11 @@ const Author = ({ data }: { data: IAuthor }) => {
 };
 
 export const ComicItm = ({ data }: { data: IComicItem }) => {
-  const { openComicDetail } = useDrawerState();
-
+  // const { openComicDetail } = useDrawerState();
+  const router = useRouter();
   const handleOpenDetail = () => {
-    openComicDetail(data.path_word);
+    router.push(`comic-detail/${data.path_word}`);
+    // openComicDetail(data.path_word);
   };
 
   return (

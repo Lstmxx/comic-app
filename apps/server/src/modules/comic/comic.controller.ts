@@ -2,7 +2,8 @@ import { Controller, Get, Param, Query } from '@nestjs/common';
 import { ComicService } from './comic.service';
 import { ComicListDto } from './dto/comic-list.dto';
 import { SearchComicDto } from './dto/search-comic.dto';
-// import { ComicItem } from '@copymanga-app/types';
+import { ChapterDto } from './dto/chapter.dto';
+// import { ComicItem } from '@comic-app/types';
 // import { Response } from 'express';
 
 @Controller('comic')
@@ -43,20 +44,10 @@ export class ComicController {
     return this.comicService.search(query);
   }
 
-  // @Get('img-proxy')
-  // async imgProxy(@Query('url') url: string, @Res() res: Response) {
-  //   console.log('controller url', url);
-  //   const response = await this.comicService.imgProxy(url);
-  //   // res.send(response);
-  //   const data = await response.arrayBuffer();
-  //   console.log(data);
-  //   const header = response.headers;
-  //   for (const key of header.keys()) {
-  //     res.setHeader(key, header.get(key as unknown as any) || '');
-  //   }
-  //   res.send(Buffer.from(data));
-  //   console.log('response headers', response);
-  // }
+  @Get('chapter')
+  getChapter(@Query() query: ChapterDto) {
+    return this.comicService.getChapter(query);
+  }
 
   @Get(':name')
   findOne(@Param('name') name: string) {
