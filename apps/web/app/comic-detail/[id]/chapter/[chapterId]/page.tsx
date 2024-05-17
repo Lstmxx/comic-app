@@ -1,6 +1,7 @@
 import { getComicChapterDetail } from "@/lib/comic";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import ImageContent from "./_components/image-content";
+import Controller from "./_components/controller";
 
 export default async function ChapterPage({
   params,
@@ -25,6 +26,7 @@ export default async function ChapterPage({
       <ScrollArea className="flex-1 container mx-auto">
         <ImageContent imgList={imgList} />
       </ScrollArea>
+      <Controller prev={prev} next={next} comicId={params.id} />
     </div>
   );
 }
