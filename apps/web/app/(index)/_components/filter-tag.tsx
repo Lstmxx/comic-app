@@ -3,7 +3,7 @@ import TagRow from "../../../components/tag-row";
 import { getAllTag } from "@/lib/tag";
 
 export default async function FilterTag() {
-  const ALL = { label: "全部", value: "" };
+  const ALL_TAG = { label: "全部", value: "" };
   const filters: {
     key: keyof TagsRes;
     name: string;
@@ -12,12 +12,12 @@ export default async function FilterTag() {
     {
       key: "top",
       name: "类型",
-      tags: [ALL],
+      tags: [ALL_TAG],
     },
     {
       key: "theme",
       name: "主题",
-      tags: [ALL],
+      tags: [ALL_TAG],
     },
     // {
     //   key: "ordering",

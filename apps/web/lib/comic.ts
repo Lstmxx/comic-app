@@ -9,6 +9,7 @@ import {
 } from "@comic-app/types";
 import { customFetch } from "./fetch";
 import { ReadonlyURLSearchParams } from "next/navigation";
+import { ALL } from "@/constant";
 
 const mergeKeys = (aKeys: string[], bKeys: string[]) => {
   const keys = new Set<string>([...aKeys, ...bKeys]);
@@ -23,12 +24,12 @@ export const updateListSearchParams = (
 
   const keys = mergeKeys([...searchParams.keys()], Object.keys(params));
   keys.forEach((key) => {
-    p.append(
-      key,
-      params[key as keyof IComicListParams]?.toString() ||
-        searchParams.get(key)?.toString() ||
-        "",
-    );
+    const value = Object.hasOwnProperty.call(params, key)
+      ? params[key as keyof IComicListParams]?.toString()
+      : searchParams.get(key)?.toString() || "";
+    if (value) {
+      p.append(key, value);
+    }
   });
   return p.toString();
 };
