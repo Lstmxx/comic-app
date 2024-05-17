@@ -2,6 +2,7 @@ import CustomImage from "@/components/custom-image";
 import { Button } from "@/components/ui/button";
 import { getComicDetail } from "@/lib/comic";
 import RowTag from "./_components/row-tag";
+import Chapter from "./_components/chapter";
 
 export default async function ComicDetailPage({
   params,
@@ -35,7 +36,7 @@ export default async function ComicDetailPage({
     });
   });
   return (
-    <div className="flex flex-col container mx-auto py-4">
+    <div className="flex flex-col container mx-auto py-4 gap-4">
       <div className="flex flex-col items-center sm:flex-row sm:items-start gap-4 ">
         <div className="w-[300px] sm:flex-1">
           <CustomImage
@@ -66,6 +67,7 @@ export default async function ComicDetailPage({
           <p className="text-sm text-muted-foreground">{data.comic.brief}</p>
         </div>
       </div>
+      <Chapter groups={data.groups} comicName={data.comic.path_word} />
     </div>
   );
 }

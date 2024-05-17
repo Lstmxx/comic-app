@@ -56,6 +56,7 @@ export class ComicService {
   }
 
   async getChapter(query: ChapterDto) {
+    console.log(`/comic/${query.name}/group/${query.groupType}/chapters`);
     const data = await this.customHttpService.get<IComicChapterRes>(
       `/comic/${query.name}/group/${query.groupType}/chapters`,
       {
@@ -66,6 +67,7 @@ export class ComicService {
         },
       },
     );
+    console.log(data);
     return data;
   }
 }

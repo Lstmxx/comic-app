@@ -10,6 +10,7 @@ export const DEFAULT_HEADERS = {
   'sec-fetch-mode': 'cors',
   'sec-fetch-dest': 'empty',
   'sec-fetch-site': 'cross-site',
+  platform: '1',
   'user-agent':
     'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
 };
@@ -48,7 +49,9 @@ export class CustomHttpService {
     url: string,
     config?: AxiosRequestConfig<C>,
   ): Promise<Response<T>> {
-    return (await this.instance.get(url, config))?.data;
+    const response = await this.instance.get(url, config);
+    console.log('respone', response);
+    return response?.data;
   }
 
   getInstance() {
