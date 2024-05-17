@@ -1,6 +1,8 @@
 import {
   ComicDetail,
   ComicList,
+  IChapterDetail,
+  IChapterDetailParams,
   IChapterParams,
   IComicChapterRes,
   IComicListParams,
@@ -58,6 +60,18 @@ export const getComicDetail = async (comicId: string) => {
 export const getComicChapter = async (params: IChapterParams) => {
   const data = await customFetch<IComicChapterRes>(
     `/comic/chapter`,
+    {
+      method: "GET",
+      cache: "no-cache",
+    },
+    params,
+  );
+  return data;
+};
+
+export const getComicChapterDetail = async (params: IChapterDetailParams) => {
+  const data = await customFetch<IChapterDetail>(
+    `/comic/chapter/detail`,
     {
       method: "GET",
       cache: "no-cache",

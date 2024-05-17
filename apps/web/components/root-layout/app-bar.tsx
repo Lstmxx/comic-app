@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 
 export default function AppBar() {
   const pathname = usePathname();
-
+  const hideAppBar = ["chapter"].some((path) => pathname.includes(path));
   const menuList: {
     title: string;
     href: string;
@@ -15,20 +15,22 @@ export default function AppBar() {
   ];
 
   return (
-    <header className="p-4 shadow-sm bg-white z-50">
-      <div className="flex justify-between container">
-        <nav className="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
-          {menuList.map((menu, index) => (
-            <a
-              key={menu.title}
-              href={menu.href}
-              className={`${pathname === menu.href ? "text-foreground" : "text-muted-foreground"} transition-colors hover:text-foreground`}
-            >
-              {menu.title}
-            </a>
-          ))}
-        </nav>
-      </div>
-    </header>
+    !hideAppBar && (
+      <header className="p-4 shadow-sm bg-white z-50">
+        <div className="flex justify-between container">
+          <nav className="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
+            {menuList.map((menu, index) => (
+              <a
+                key={menu.title}
+                href={menu.href}
+                className={`${pathname === menu.href ? "text-foreground" : "text-muted-foreground"} transition-colors hover:text-foreground`}
+              >
+                {menu.title}
+              </a>
+            ))}
+          </nav>
+        </div>
+      </header>
+    )
   );
 }

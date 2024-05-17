@@ -7,12 +7,14 @@ import {
   ComicDetail,
   ComicList,
   ComicSearchList,
+  IChapterDetail,
   IComicChapterRes,
 } from '@comic-app/types';
 import { ComicListDto } from './dto/comic-list.dto';
 import { SearchComicDto } from './dto/search-comic.dto';
 import { arrayBufferToImgSrc } from 'src/common/utils/img';
 import { ChapterDto } from './dto/chapter.dto';
+import { ChapterDetailDto } from './dto/chapter-detail.dto';
 
 @Injectable()
 export class ComicService {
@@ -68,6 +70,19 @@ export class ComicService {
       },
     );
     console.log(data);
+    return data;
+  }
+
+  async getChapterDetail(query: ChapterDetailDto) {
+    const data = await this.customHttpService.get<IChapterDetail>(
+      `/comic/${query.name}/chapter2/${query.chapterId}`,
+      {
+        params: {
+          _update: true,
+          platform: '3',
+        },
+      },
+    );
     return data;
   }
 }

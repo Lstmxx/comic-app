@@ -37,7 +37,7 @@ export default function ComicDetail() {
           <div className="flex gap-4 items-start">
             <div className="flex-1">
               <CustomImage
-                className="w-full pb-[128%]"
+                className="w-full"
                 imgProps={{
                   src: detail?.comic.cover,
                   alt: detail?.comic.alias,

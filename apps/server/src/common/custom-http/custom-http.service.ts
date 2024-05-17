@@ -5,14 +5,18 @@ import { Response } from './type';
 const VERSION = 'v3';
 
 export const DEFAULT_HEADERS = {
-  origin: 'https://copymanga.site',
+  // origin: 'https://copymanga.site',
+  referer: 'com.copymanga.app-2.1.7',
   accept: 'application/json',
   'sec-fetch-mode': 'cors',
   'sec-fetch-dest': 'empty',
   'sec-fetch-site': 'cross-site',
-  platform: '1',
-  'user-agent':
-    'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  source: 'copyApp',
+  platform: '3',
+  'user-agent': 'COPY/2.1.7',
+  webp: '1',
+  version: '2.1.7',
+  // device: 'QSR1.210802.001',
 };
 
 @Injectable()

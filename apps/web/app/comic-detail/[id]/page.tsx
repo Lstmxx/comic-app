@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { getComicDetail } from "@/lib/comic";
 import RowTag from "./_components/row-tag";
 import Chapter from "./_components/chapter";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 export default async function ComicDetailPage({
   params,
@@ -36,38 +37,40 @@ export default async function ComicDetailPage({
     });
   });
   return (
-    <div className="flex flex-col container mx-auto py-4 gap-4">
-      <div className="flex flex-col items-center sm:flex-row sm:items-start gap-4 ">
-        <div className="w-[300px] sm:flex-1">
-          <CustomImage
-            className="w-full pb-[128%]"
-            imgProps={{
-              src: data?.comic.cover,
-              alt: data?.comic.alias,
-              className: "rounded-lg object-cover",
-              loading: "lazy",
-            }}
-          />
+    <div className="flex h-full flex-col pt-4">
+      <ScrollArea className="flex-1 w-full container mx-auto">
+        <div className="flex flex-col items-center sm:flex-row sm:items-start gap-4 ">
+          <div className="min-w-[300px] max-w-[300px] sm:flex-1">
+            <CustomImage
+              className="w-full"
+              imgProps={{
+                src: data?.comic.cover,
+                alt: data?.comic.alias,
+                className: "rounded-lg object-cover",
+                loading: "lazy",
+              }}
+            />
+          </div>
+          <div className="flex flex-1 sm:flex-[2] flex-col gap-2">
+            <h2 className="text-lg font-semibold">{data.comic.name}</h2>
+            <p className="text-sm text-muted-foreground">{data.comic.alias}</p>
+            <RowTag
+              label="作者"
+              tags={data.comic.author.map((author) => ({
+                id: author.path_word,
+                name: author.name,
+                type: "author",
+              }))}
+            />
+            <RowTag tags={themeTags} />
+            <p className="text-sm text-muted-foreground">
+              最后更新时间：{data.comic.datetime_updated}
+            </p>
+            <p className="text-sm text-muted-foreground">{data.comic.brief}</p>
+          </div>
         </div>
-        <div className="flex flex-1 sm:flex-[2] flex-col gap-2">
-          <h2 className="text-lg font-semibold">{data.comic.name}</h2>
-          <p className="text-sm text-muted-foreground">{data.comic.alias}</p>
-          <RowTag
-            label="作者"
-            tags={data.comic.author.map((author) => ({
-              id: author.path_word,
-              name: author.name,
-              type: "author",
-            }))}
-          />
-          <RowTag tags={themeTags} />
-          <p className="text-sm text-muted-foreground">
-            最后更新时间：{data.comic.datetime_updated}
-          </p>
-          <p className="text-sm text-muted-foreground">{data.comic.brief}</p>
-        </div>
-      </div>
-      <Chapter groups={data.groups} comicName={data.comic.path_word} />
+        <Chapter groups={data.groups} comicName={data.comic.path_word} />
+      </ScrollArea>
     </div>
   );
 }

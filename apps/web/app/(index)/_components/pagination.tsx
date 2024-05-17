@@ -22,6 +22,7 @@ export default function Pagination({
   return CustomPagination({
     total,
     limit,
+    defaultPage: Number(params.get("page") || 1),
     handlePre: handleRoute,
     handleNext: handleRoute,
     handleJump: handleRoute,

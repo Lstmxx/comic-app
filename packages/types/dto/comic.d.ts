@@ -22,3 +22,8 @@ export type IChapterParams = {
   offset: string;
   _update: boolean;
 };
+
+export type IChapterDetailParams = {
+  name: string;
+  chapterId: string;
+};

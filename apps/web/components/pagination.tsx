@@ -1,6 +1,6 @@
 "use client";
 
-import { useSearchParams } from "next/navigation";
+// import { useSearchParams } from "next/navigation";
 import {
   Pagination,
   PaginationContent,
@@ -10,32 +10,29 @@ import {
 } from "./ui/pagination";
 
 import { Input } from "./ui/input";
-
-import { useRouter } from "next/navigation";
-import { updateListSearchParams } from "@/lib/comic";
 import { Button } from "./ui/button";
 import { ChangeEventHandler, useEffect, useState } from "react";
 
 export default function CustomPagination({
   total,
   limit,
+  defaultPage,
   handlePre,
   handleNext,
   handleJump,
 }: {
+  defaultPage?: number;
   total: number;
   limit: number;
   handlePre: (page: number) => void;
   handleNext: (page: number) => void;
   handleJump: (page: number) => void;
 }) {
-  const router = useRouter();
-
-  const params = useSearchParams();
-  const currentPage = Number(params.get("page") || 1);
+  // const params = useSearchParams();
+  const currentPage = defaultPage || 1;
 
   const isPreDisable = currentPage === 1;
-  const pre = () => {
+  const prev = () => {
     if (isPreDisable) return;
     const newPage = Math.max(currentPage - 1, 1);
     handlePre(newPage);
@@ -44,8 +41,6 @@ export default function CustomPagination({
   const maxPage = Math.ceil(total / limit);
   const isNextDisable = currentPage >= maxPage;
 
-  console.log("page", currentPage);
-  console.log("total", total);
   const next = () => {
     if (isNextDisable) return;
     const newPage = Math.min(currentPage + 1, maxPage);
@@ -73,10 +68,10 @@ export default function CustomPagination({
         <PaginationItem>
           <PaginationPrevious
             className={`${isPreDisable ? "text-muted-foreground hover:bg-white hover:text-muted-foreground cursor-not-allowed" : "cursor-pointer"}`}
-            onClick={pre}
+            onClick={prev}
           />
         </PaginationItem>
-        <PaginationItem>
+        <PaginationItem className="hidden md:inline-block">
           <div className="flex gap-2 items-center">
             <Input
               className="w-[80px]"

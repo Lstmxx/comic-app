@@ -145,3 +145,51 @@ export type IComicChapterRes = {
   limit: number;
   offset: number;
 };
+
+interface Content {
+  url: string;
+}
+
+interface Chapter {
+  index: number;
+  uuid: string;
+  count: number;
+  ordered: number;
+  size: number;
+  name: string;
+  comic_id: string;
+  comic_path_word: string;
+  group_id: null | string;
+  group_path_word: string;
+  type: number;
+  img_type: number;
+  news: string;
+  datetime_created: string;
+  prev: null | string;
+  next: null | string;
+  contents: Content[];
+  words: number[];
+  is_long: boolean;
+}
+
+interface Restrict {
+  value: number;
+  display: string;
+}
+
+interface Comic {
+  name: string;
+  uuid: string;
+  path_word: string;
+  restrict: Restrict;
+}
+
+export interface IChapterDetail {
+  show_app: boolean;
+  is_lock: boolean;
+  is_login: boolean;
+  is_mobile_bind: boolean;
+  is_vip: boolean;
+  comic: Comic;
+  chapter: Chapter;
+}

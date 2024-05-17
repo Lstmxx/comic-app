@@ -3,6 +3,7 @@ import { ComicService } from './comic.service';
 import { ComicListDto } from './dto/comic-list.dto';
 import { SearchComicDto } from './dto/search-comic.dto';
 import { ChapterDto } from './dto/chapter.dto';
+import { ChapterDetailDto } from './dto/chapter-detail.dto';
 // import { ComicItem } from '@comic-app/types';
 // import { Response } from 'express';
 
@@ -42,6 +43,11 @@ export class ComicController {
   @Get('search')
   searchComic(@Query() query: SearchComicDto) {
     return this.comicService.search(query);
+  }
+
+  @Get('chapter/detail')
+  getChapterDetail(@Query() query: ChapterDetailDto) {
+    return this.comicService.getChapterDetail(query);
   }
 
   @Get('chapter')
