@@ -19,7 +19,7 @@ export default function Controller({
     router.push(`/comic-detail/${comicId}`);
   };
   return (
-    <div className="flex gap-2 items-center justify-center">
+    <div className="flex gap-2 items-center justify-center p-2">
       <Button disabled={prev === null} onClick={() => handleRoute(prev!)}>
         上一章
       </Button>

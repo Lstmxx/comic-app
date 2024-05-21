@@ -4,6 +4,7 @@ import { Author as IAuthor, ComicItem as IComicItem } from "@comic-app/types";
 import { MouseEventHandler } from "react";
 import CustomImage from "./custom-image";
 import { useRouter } from "next/navigation";
+import { isMobile } from "@/lib/is";
 
 const Author = ({ data }: { data: IAuthor }) => {
   const { openAuthorDetail } = useDrawerState();
@@ -26,7 +27,12 @@ export const ComicItm = ({ data }: { data: IComicItem }) => {
   // const { openComicDetail } = useDrawerState();
   const router = useRouter();
   const handleOpenDetail = () => {
-    window.open(`/comic-detail/${data.path_word}`, "_blank");
+    const url = `/comic-detail/${data.path_word}`;
+    if (isMobile()) {
+      router.push(url);
+    } else {
+      window.open(url, "_blank");
+    }
     // openComicDetail(data.path_word);
   };
 

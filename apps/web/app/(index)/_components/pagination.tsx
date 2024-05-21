@@ -3,6 +3,7 @@
 import CustomPagination from "@/components/pagination";
 import { updateListSearchParams } from "@/lib/comic";
 import { useRouter, useSearchParams } from "next/navigation";
+import { useScrollState } from "../_hooks/use-scroll-store";
 
 export default function Pagination({
   total,
@@ -13,11 +14,14 @@ export default function Pagination({
 }) {
   const router = useRouter();
   const params = useSearchParams();
+
+  const store = useScrollState();
   const handleRoute = (newPage: number) => {
     const paramsStr = updateListSearchParams(params, {
       page: newPage.toString(),
     });
     router.push(`?${paramsStr}`);
+    store.scrollToTop();
   };
   return CustomPagination({
     total,

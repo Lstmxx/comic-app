@@ -5,7 +5,7 @@ import {
   IChapterDetailParams,
   IChapterParams,
   IComicChapterRes,
-  IComicListParams,
+  IComicPageParams,
 } from "@comic-app/types";
 import { customFetch } from "./fetch";
 import { ReadonlyURLSearchParams } from "next/navigation";
@@ -18,14 +18,14 @@ const mergeKeys = (aKeys: string[], bKeys: string[]) => {
 
 export const updateListSearchParams = (
   searchParams: ReadonlyURLSearchParams,
-  params: Partial<IComicListParams & { page: string }>,
+  params: Partial<IComicPageParams & { page: string }>,
 ) => {
   const p = new URLSearchParams();
 
   const keys = mergeKeys([...searchParams.keys()], Object.keys(params));
   keys.forEach((key) => {
     const value = Object.hasOwnProperty.call(params, key)
-      ? params[key as keyof IComicListParams]?.toString()
+      ? params[key as keyof IComicPageParams]?.toString()
       : searchParams.get(key)?.toString() || "";
     if (value) {
       p.append(key, value);
@@ -34,7 +34,7 @@ export const updateListSearchParams = (
   return p.toString();
 };
 
-export const getComicPage = async (params: IComicListParams) => {
+export const getComicPage = async (params: IComicPageParams) => {
   const data = await customFetch<ComicList>(
     "/comic/list",
     {

@@ -38,7 +38,7 @@ export default async function FilterTag() {
   });
 
   return (
-    <div className="flex flex-col gap-2 text-sm py-4 container">
+    <div className="hidden sm:flex flex-col gap-2 text-sm py-4 container">
       {filters.map((filter, index) => (
         <div className="flex items-center flex-wrap" key={index}>
           <span className="mr-2">{filter.name}: </span>

@@ -22,7 +22,7 @@ export default async function ChapterPage({
     .sort((a, b) => words[a.index] - words[b.index])
     .map((item) => item.url);
   return (
-    <div className="flex flex-col h-full py-2">
+    <div className="flex flex-col h-full ">
       <ScrollArea className="flex-1 container mx-auto">
         <ImageContent imgList={imgList} />
       </ScrollArea>

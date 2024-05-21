@@ -1,14 +1,15 @@
 import ComicDetail from "@/components/comic-detail";
 import ComicList from "@/components/comic-list";
 import CustomPagination from "./pagination";
-import { ScrollArea } from "@/components/ui/scroll-area";
+import ScrollArea from ".//scroll-area";
 import { getComicPage } from "@/lib/comic";
-import { IComicListParams } from "@comic-app/types";
+import { IComicPageParams } from "@comic-app/types";
+import { useRef } from "react";
 
 export default async function Content({
   params,
 }: {
-  params: Partial<Omit<IComicListParams, "offset">> & { page?: string };
+  params: Partial<Omit<IComicPageParams, "offset">> & { page?: string };
 }) {
   const LIMIT = 20;
   const p = params ?? {};
@@ -23,7 +24,7 @@ export default async function Content({
 
   return (
     <>
-      <ScrollArea className="flex-1 w-full p-2 ">
+      <ScrollArea>
         <ComicList list={comicPageData.list} />
       </ScrollArea>
       <CustomPagination
