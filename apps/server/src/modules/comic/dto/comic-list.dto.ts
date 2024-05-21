@@ -1,7 +1,7 @@
-import { IComicListParams } from '@comic-app/types';
+import { IComicPageParams } from '@comic-app/types';
 import { IsBooleanString, IsNotEmpty, IsNumberString } from 'class-validator';
 
-export class ComicListDto implements IComicListParams {
+export class ComicPageDto implements IComicPageParams {
   theme: string;
   top: string;
   @IsNumberString()

@@ -1,3 +1,4 @@
+import { Toaster } from "../ui/toaster";
 import AppBar from "./app-bar";
 import Content from "./content";
 import Footer from "./footer";
@@ -12,6 +13,7 @@ export default function RootLayout({
       <AppBar />
       <Content>{children}</Content>
       <Footer />
+      <Toaster />
     </div>
   );
 }

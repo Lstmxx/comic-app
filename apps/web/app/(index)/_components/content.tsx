@@ -3,8 +3,8 @@ import ComicList from "@/components/comic-list";
 import CustomPagination from "./pagination";
 import ScrollArea from ".//scroll-area";
 import { getComicPage } from "@/lib/comic";
-import { IComicPageParams } from "@comic-app/types";
-import { useRef } from "react";
+import { IComicPageParams, ComicList as IComicList } from "@comic-app/types";
+import ErrorTips from "@/components/error-tips";
 
 export default async function Content({
   params,
@@ -13,14 +13,25 @@ export default async function Content({
 }) {
   const LIMIT = 20;
   const p = params ?? {};
-  const comicPageData = await getComicPage({
+  let comicPageData: IComicList = {
+    list: [],
+    total: 0,
     limit: LIMIT,
-    offset: (Number(p.page || "1") - 1) * LIMIT,
-    ordering: "-datetime_updated",
-    theme: p.theme ?? "",
-    _update: false,
-    top: p.top ?? "",
-  });
+    offset: 0,
+  };
+  let errorMsg = "";
+  try {
+    comicPageData = await getComicPage({
+      limit: LIMIT,
+      offset: (Number(p.page || "1") - 1) * LIMIT,
+      ordering: "-datetime_updated",
+      theme: p.theme ?? "",
+      _update: false,
+      top: p.top ?? "",
+    });
+  } catch (error) {
+    errorMsg = "漫画列表获取失败";
+  }
 
   return (
     <>
@@ -32,6 +43,7 @@ export default async function Content({
         limit={comicPageData.limit}
       />
       <ComicDetail />
+      {errorMsg ? <ErrorTips msg={errorMsg} /> : ""}
     </>
   );
 }

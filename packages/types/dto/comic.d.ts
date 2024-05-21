@@ -1,4 +1,4 @@
-export type IComicListParams = {
+export type IComicPageParams = {
   limit: number;
   offset: number;
   ordering: string;

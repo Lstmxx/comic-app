@@ -6,16 +6,25 @@ import * as ScrollAreaPrimitive from "@radix-ui/react-scroll-area";
 import { cn } from "@/lib/utils";
 
 import { debounce } from "lodash-es";
-import { LoaderCircle } from "lucide-react";
 
 const ScrollArea = React.forwardRef<
   React.ElementRef<typeof ScrollAreaPrimitive.Root>,
-  React.ComponentPropsWithoutRef<typeof ScrollAreaPrimitive.Root>
->(({ className, children, ...props }, ref) => {
+  React.ComponentPropsWithoutRef<typeof ScrollAreaPrimitive.Root> & {
+    onBottom?: () => void;
+  }
+>(({ className, children, onBottom, ...props }, ref) => {
   const handleScroll = debounce(
     (event: React.UIEvent<HTMLDivElement, UIEvent>) => {
       if (props.onScroll) {
         props.onScroll(event);
+      }
+
+      const target = event.target as HTMLDivElement;
+      const isBottom =
+        target.scrollHeight - target.scrollTop === target.clientHeight;
+      if (isBottom) {
+        onBottom && onBottom();
+        console.log("bottom");
       }
     },
     100,

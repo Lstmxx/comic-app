@@ -10,7 +10,7 @@ import {
   IChapterDetail,
   IComicChapterRes,
 } from '@comic-app/types';
-import { ComicListDto } from './dto/comic-list.dto';
+import { ComicPageDto } from './dto/comic-list.dto';
 import { SearchComicDto } from './dto/search-comic.dto';
 import { arrayBufferToImgSrc } from 'src/common/utils/img';
 import { ChapterDto } from './dto/chapter.dto';
@@ -21,9 +21,9 @@ export class ComicService {
   @Inject(CustomHttpService)
   private customHttpService: CustomHttpService;
 
-  async getList(ComicListDto: ComicListDto) {
+  async getList(ComicPageDto: ComicPageDto) {
     const data = await this.customHttpService.get<ComicList>('/comics', {
-      params: ComicListDto,
+      params: ComicPageDto,
     });
     return data;
   }

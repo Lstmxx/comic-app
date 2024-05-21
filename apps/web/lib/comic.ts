@@ -9,7 +9,6 @@ import {
 } from "@comic-app/types";
 import { customFetch } from "./fetch";
 import { ReadonlyURLSearchParams } from "next/navigation";
-import { ALL } from "@/constant";
 
 const mergeKeys = (aKeys: string[], bKeys: string[]) => {
   const keys = new Set<string>([...aKeys, ...bKeys]);
