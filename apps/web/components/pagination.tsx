@@ -65,12 +65,14 @@ export default function CustomPagination({
   return (
     <Pagination className="flex justify-end container py-2">
       <PaginationContent>
-        <PaginationItem>
-          <PaginationPrevious
-            className={`${isPreDisable ? "text-muted-foreground hover:bg-white hover:text-muted-foreground cursor-not-allowed" : "cursor-pointer"}`}
-            onClick={prev}
-          />
-        </PaginationItem>
+        {!isPreDisable && (
+          <PaginationItem>
+            <PaginationPrevious
+              className={`${isPreDisable ? "text-muted-foreground hover:bg-white hover:text-muted-foreground cursor-not-allowed" : "cursor-pointer"}`}
+              onClick={prev}
+            />
+          </PaginationItem>
+        )}
         <PaginationItem className="hidden md:inline-block">
           <div className="flex gap-2 items-center">
             <Input
@@ -84,12 +86,14 @@ export default function CustomPagination({
             <Button onClick={jump}>GO</Button>
           </div>
         </PaginationItem>
-        <PaginationItem>
-          <PaginationNext
-            className={`${isNextDisable ? "text-muted-foreground hover:bg-white hover:text-muted-foreground cursor-not-allowed" : "cursor-pointer"}`}
-            onClick={next}
-          />
-        </PaginationItem>
+        {!isNextDisable && (
+          <PaginationItem>
+            <PaginationNext
+              className={`${isNextDisable ? "text-muted-foreground hover:bg-white hover:text-muted-foreground cursor-not-allowed" : "cursor-pointer"}`}
+              onClick={next}
+            />
+          </PaginationItem>
+        )}
       </PaginationContent>
     </Pagination>
   );
