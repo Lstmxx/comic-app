@@ -1,8 +1,11 @@
-import { NestFactory } from '@nestjs/core';
-import { UserServiceModule } from './user-service.module';
+import { microserviceBootstrap } from '@app/public-tool';
+import { AppModule } from './app.module';
+import { Transport } from '@nestjs/microservices';
 
-async function bootstrap() {
-  const app = await NestFactory.create(UserServiceModule);
-  await app.listen(3000);
-}
-bootstrap();
+// 启动服务
+microserviceBootstrap(AppModule, {
+  transport: Transport.TCP,
+  options: {
+    port: 4001,
+  },
+});

@@ -3,6 +3,7 @@ import {
   NestInterceptor,
   ExecutionContext,
   CallHandler,
+  Inject,
 } from '@nestjs/common';
 import { TcpContext } from '@nestjs/microservices';
 import { Observable } from 'rxjs';
@@ -27,7 +28,10 @@ const interval = '/'.repeat(50);
 export class TransformInterceptor<T>
   implements NestInterceptor<T, Response<T>>
 {
-  constructor(private readonly loggerService: LoggerService) {}
+  constructor() {}
+
+  @Inject(LoggerService)
+  private readonly loggerService: LoggerService;
 
   intercept(
     context: ExecutionContext,

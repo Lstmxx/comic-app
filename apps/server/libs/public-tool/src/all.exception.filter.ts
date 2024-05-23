@@ -61,7 +61,7 @@ export class AllExceptionFilter implements ExceptionFilter {
     this.loggerService.log(line, '请求结束');
 
     if (response instanceof TcpContext) {
-      return throwError(exception);
+      return throwError(() => new Error(exception));
     }
 
     response.status(code).json(resJson);

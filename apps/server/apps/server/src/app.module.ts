@@ -3,11 +3,23 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { UserModule } from './modules/user/user.module';
 import { ComicModule } from './modules/comic/comic.module';
-import { CustomHttpModule } from './common/custom-http/custom-http.module';
 import { TagModule } from './modules/tag/tag.module';
+import { CustomHttpModule, GlobalModule } from '@app/public-module';
 
 @Module({
-  imports: [CustomHttpModule, UserModule, ComicModule, TagModule],
+  imports: [
+    GlobalModule.forRoot({
+      yamlFilePath: ['apps/server.yaml'],
+      microservice: ['USER_SERVICE'],
+      cache: true,
+      // upload: true,
+      // aliOss: true,
+    }),
+    CustomHttpModule,
+    UserModule,
+    ComicModule,
+    TagModule,
+  ],
   controllers: [AppController],
   providers: [AppService],
 })

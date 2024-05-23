@@ -1,0 +1,104 @@
+2024-05-23T17:05:11.475 [INFO] RoutesResolver AppController {/api}:
+2024-05-23T17:05:11.476 [INFO] RouterExplorer Mapped {/api, GET} route
+2024-05-23T17:05:11.477 [INFO] RoutesResolver UserController {/api/user}:
+2024-05-23T17:05:11.477 [INFO] RouterExplorer Mapped {/api/user, POST} route
+2024-05-23T17:05:11.477 [INFO] RouterExplorer Mapped {/api/user, GET} route
+2024-05-23T17:05:11.477 [INFO] RouterExplorer Mapped {/api/user/:id, GET} route
+2024-05-23T17:05:11.478 [INFO] RouterExplorer Mapped {/api/user/:id, PATCH} route
+2024-05-23T17:05:11.478 [INFO] RouterExplorer Mapped {/api/user/:id, DELETE} route
+2024-05-23T17:05:11.478 [INFO] RoutesResolver ComicController {/api/comic}:
+2024-05-23T17:05:11.478 [INFO] RouterExplorer Mapped {/api/comic/list, GET} route
+2024-05-23T17:05:11.478 [INFO] RouterExplorer Mapped {/api/comic/search, GET} route
+2024-05-23T17:05:11.479 [INFO] RouterExplorer Mapped {/api/comic/chapter/detail, GET} route
+2024-05-23T17:05:11.479 [INFO] RouterExplorer Mapped {/api/comic/chapter, GET} route
+2024-05-23T17:05:11.479 [INFO] RouterExplorer Mapped {/api/comic/:name, GET} route
+2024-05-23T17:05:11.479 [INFO] RoutesResolver TagController {/api/tag}:
+2024-05-23T17:05:11.479 [INFO] RouterExplorer Mapped {/api/tag, GET} route
+2024-05-23T17:05:11.480 [INFO] NestApplication Nest application successfully started
+2024-05-23T17:05:17.460 [INFO] RoutesResolver AppController {/api}:
+2024-05-23T17:05:17.461 [INFO] RouterExplorer Mapped {/api, GET} route
+2024-05-23T17:05:17.461 [INFO] RoutesResolver UserController {/api/user}:
+2024-05-23T17:05:17.462 [INFO] RouterExplorer Mapped {/api/user, POST} route
+2024-05-23T17:05:17.462 [INFO] RouterExplorer Mapped {/api/user, GET} route
+2024-05-23T17:05:17.462 [INFO] RouterExplorer Mapped {/api/user/:id, GET} route
+2024-05-23T17:05:17.463 [INFO] RouterExplorer Mapped {/api/user/:id, PATCH} route
+2024-05-23T17:05:17.463 [INFO] RouterExplorer Mapped {/api/user/:id, DELETE} route
+2024-05-23T17:05:17.463 [INFO] RoutesResolver ComicController {/api/comic}:
+2024-05-23T17:05:17.463 [INFO] RouterExplorer Mapped {/api/comic/list, GET} route
+2024-05-23T17:05:17.464 [INFO] RouterExplorer Mapped {/api/comic/search, GET} route
+2024-05-23T17:05:17.465 [INFO] RouterExplorer Mapped {/api/comic/chapter/detail, GET} route
+2024-05-23T17:05:17.466 [INFO] RouterExplorer Mapped {/api/comic/chapter, GET} route
+2024-05-23T17:05:17.466 [INFO] RouterExplorer Mapped {/api/comic/:name, GET} route
+2024-05-23T17:05:17.466 [INFO] RoutesResolver TagController {/api/tag}:
+2024-05-23T17:05:17.467 [INFO] RouterExplorer Mapped {/api/tag, GET} route
+2024-05-23T17:05:17.469 [INFO] NestApplication Nest application successfully started
+2024-05-23T17:12:20.205 [INFO] RoutesResolver AppController {/api}:
+2024-05-23T17:12:20.206 [INFO] RouterExplorer Mapped {/api, GET} route
+2024-05-23T17:12:20.206 [INFO] RoutesResolver UserController {/api/user}:
+2024-05-23T17:12:20.206 [INFO] RouterExplorer Mapped {/api/user, POST} route
+2024-05-23T17:12:20.206 [INFO] RouterExplorer Mapped {/api/user, GET} route
+2024-05-23T17:12:20.207 [INFO] RouterExplorer Mapped {/api/user/:id, GET} route
+2024-05-23T17:12:20.207 [INFO] RouterExplorer Mapped {/api/user/:id, PATCH} route
+2024-05-23T17:12:20.207 [INFO] RouterExplorer Mapped {/api/user/:id, DELETE} route
+2024-05-23T17:12:20.207 [INFO] RoutesResolver ComicController {/api/comic}:
+2024-05-23T17:12:20.207 [INFO] RouterExplorer Mapped {/api/comic/list, GET} route
+2024-05-23T17:12:20.208 [INFO] RouterExplorer Mapped {/api/comic/search, GET} route
+2024-05-23T17:12:20.208 [INFO] RouterExplorer Mapped {/api/comic/chapter/detail, GET} route
+2024-05-23T17:12:20.208 [INFO] RouterExplorer Mapped {/api/comic/chapter, GET} route
+2024-05-23T17:12:20.208 [INFO] RouterExplorer Mapped {/api/comic/:name, GET} route
+2024-05-23T17:12:20.208 [INFO] RoutesResolver TagController {/api/tag}:
+2024-05-23T17:12:20.208 [INFO] RouterExplorer Mapped {/api/tag, GET} route
+2024-05-23T17:12:20.209 [INFO] NestApplication Nest application successfully started
+2024-05-23T23:18:37.683 [INFO] RoutesResolver AppController {/api}:
+2024-05-23T23:18:37.684 [INFO] RouterExplorer Mapped {/api, GET} route
+2024-05-23T23:18:37.684 [INFO] RoutesResolver UserController {/api/user}:
+2024-05-23T23:18:37.685 [INFO] RouterExplorer Mapped {/api/user, POST} route
+2024-05-23T23:18:37.685 [INFO] RouterExplorer Mapped {/api/user, GET} route
+2024-05-23T23:18:37.685 [INFO] RouterExplorer Mapped {/api/user/:id, GET} route
+2024-05-23T23:18:37.685 [INFO] RouterExplorer Mapped {/api/user/:id, PATCH} route
+2024-05-23T23:18:37.685 [INFO] RouterExplorer Mapped {/api/user/:id, DELETE} route
+2024-05-23T23:18:37.686 [INFO] RoutesResolver ComicController {/api/comic}:
+2024-05-23T23:18:37.686 [INFO] RouterExplorer Mapped {/api/comic/list, GET} route
+2024-05-23T23:18:37.686 [INFO] RouterExplorer Mapped {/api/comic/search, GET} route
+2024-05-23T23:18:37.686 [INFO] RouterExplorer Mapped {/api/comic/chapter/detail, GET} route
+2024-05-23T23:18:37.686 [INFO] RouterExplorer Mapped {/api/comic/chapter, GET} route
+2024-05-23T23:18:37.686 [INFO] RouterExplorer Mapped {/api/comic/:name, GET} route
+2024-05-23T23:18:37.687 [INFO] RoutesResolver TagController {/api/tag}:
+2024-05-23T23:18:37.687 [INFO] RouterExplorer Mapped {/api/tag, GET} route
+2024-05-23T23:18:37.688 [INFO] NestApplication Nest application successfully started
+2024-05-23T23:22:30.036 [INFO] NestMicroservice Nest microservice successfully started
+2024-05-23T23:24:12.931 [INFO] RoutesResolver AppController {/api}:
+2024-05-23T23:24:12.932 [INFO] RouterExplorer Mapped {/api, GET} route
+2024-05-23T23:24:12.932 [INFO] RoutesResolver UserController {/api/user}:
+2024-05-23T23:24:12.933 [INFO] RouterExplorer Mapped {/api/user, POST} route
+2024-05-23T23:24:12.933 [INFO] RouterExplorer Mapped {/api/user, GET} route
+2024-05-23T23:24:12.933 [INFO] RouterExplorer Mapped {/api/user/:id, GET} route
+2024-05-23T23:24:12.933 [INFO] RouterExplorer Mapped {/api/user/:id, PATCH} route
+2024-05-23T23:24:12.934 [INFO] RouterExplorer Mapped {/api/user/:id, DELETE} route
+2024-05-23T23:24:12.934 [INFO] RoutesResolver ComicController {/api/comic}:
+2024-05-23T23:24:12.934 [INFO] RouterExplorer Mapped {/api/comic/list, GET} route
+2024-05-23T23:24:12.934 [INFO] RouterExplorer Mapped {/api/comic/search, GET} route
+2024-05-23T23:24:12.934 [INFO] RouterExplorer Mapped {/api/comic/chapter/detail, GET} route
+2024-05-23T23:24:12.935 [INFO] RouterExplorer Mapped {/api/comic/chapter, GET} route
+2024-05-23T23:24:12.935 [INFO] RouterExplorer Mapped {/api/comic/:name, GET} route
+2024-05-23T23:24:12.935 [INFO] RoutesResolver TagController {/api/tag}:
+2024-05-23T23:24:12.935 [INFO] RouterExplorer Mapped {/api/tag, GET} route
+2024-05-23T23:24:12.936 [INFO] NestApplication Nest application successfully started
+2024-05-23T23:24:27.358 [INFO] RoutesResolver AppController {/api}:
+2024-05-23T23:24:27.359 [INFO] RouterExplorer Mapped {/api, GET} route
+2024-05-23T23:24:27.360 [INFO] RoutesResolver UserController {/api/user}:
+2024-05-23T23:24:27.360 [INFO] RouterExplorer Mapped {/api/user, POST} route
+2024-05-23T23:24:27.360 [INFO] RouterExplorer Mapped {/api/user, GET} route
+2024-05-23T23:24:27.360 [INFO] RouterExplorer Mapped {/api/user/:id, GET} route
+2024-05-23T23:24:27.361 [INFO] RouterExplorer Mapped {/api/user/:id, PATCH} route
+2024-05-23T23:24:27.361 [INFO] RouterExplorer Mapped {/api/user/:id, DELETE} route
+2024-05-23T23:24:27.361 [INFO] RoutesResolver ComicController {/api/comic}:
+2024-05-23T23:24:27.361 [INFO] RouterExplorer Mapped {/api/comic/list, GET} route
+2024-05-23T23:24:27.361 [INFO] RouterExplorer Mapped {/api/comic/search, GET} route
+2024-05-23T23:24:27.362 [INFO] RouterExplorer Mapped {/api/comic/chapter/detail, GET} route
+2024-05-23T23:24:27.362 [INFO] RouterExplorer Mapped {/api/comic/chapter, GET} route
+2024-05-23T23:24:27.362 [INFO] RouterExplorer Mapped {/api/comic/:name, GET} route
+2024-05-23T23:24:27.362 [INFO] RoutesResolver TagController {/api/tag}:
+2024-05-23T23:24:27.362 [INFO] RouterExplorer Mapped {/api/tag, GET} route
+2024-05-23T23:24:27.363 [INFO] NestApplication Nest application successfully started
+2024-05-23T23:24:58.907 [INFO] NestMicroservice Nest microservice successfully started

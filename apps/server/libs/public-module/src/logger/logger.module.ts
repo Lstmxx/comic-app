@@ -27,6 +27,7 @@ export class LoggerModule {
           provide: LoggerService,
           useFactory: async (...args: any[]) => {
             const options = await useFactory(...args);
+            console.log('options', options);
             return new LoggerService(options);
           },
           inject,

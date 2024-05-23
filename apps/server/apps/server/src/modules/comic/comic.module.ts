@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { ComicService } from './comic.service';
 import { ComicController } from './comic.controller';
-import { CustomHttpService } from 'src/common/custom-http/custom-http.service';
+import { CustomHttpService } from '../../../../../libs/public-module/src/custom-http/custom-http.service';
 
 @Module({
   controllers: [ComicController],

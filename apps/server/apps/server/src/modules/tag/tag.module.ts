@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { TagService } from './tag.service';
 import { TagController } from './tag.controller';
-import { CustomHttpService } from 'src/common/custom-http/custom-http.service';
+import { CustomHttpService } from '@app/public-module';
 
 @Module({
   controllers: [TagController],

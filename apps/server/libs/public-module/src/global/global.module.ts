@@ -5,7 +5,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { ClientsModule } from '@nestjs/microservices';
 // import { ServeStaticModule } from '@nestjs/serve-static';
 // import { MulterModule } from '@nestjs/platform-express';
-import { TypeOrmModule } from '@nestjs/typeorm';
+// import { TypeOrmModule } from '@nestjs/typeorm';
 
 import {
   rootPath,
@@ -23,7 +23,7 @@ import { join } from 'path';
 // import redisStore from 'cache-manager-redis-store';
 // import { diskStorage } from 'multer';
 import { load } from 'js-yaml';
-import { merge, cloneDeepWith } from 'lodash-es';
+import { merge, cloneDeepWith } from 'lodash';
 // import moment from 'moment';
 // import nuid from 'nuid';
 
@@ -87,6 +87,8 @@ export class GlobalModule {
               if (value === null) return '';
             });
 
+            console.log(configs);
+
             return configs;
           },
         ],
@@ -96,6 +98,7 @@ export class GlobalModule {
         isGlobal: true,
         useFactory: (configService: ConfigService) => {
           const path = configService.get('logsPath');
+          console.log('logger');
           return { filename: join(rootPath, `logs/${path}/${path}.log`) };
         },
         inject: [ConfigService],
@@ -123,15 +126,15 @@ export class GlobalModule {
 
     // 启动 orm 模块
     if (typeorm) {
-      imports.push(
-        TypeOrmModule.forRootAsync({
-          useFactory: (configService: ConfigService) => {
-            const db = configService.get('db');
-            return { ...db, autoLoadEntities: true };
-          },
-          inject: [ConfigService],
-        }),
-      );
+      // imports.push(
+      //   TypeOrmModule.forRootAsync({
+      //     useFactory: (configService: ConfigService) => {
+      //       const db = configService.get('db');
+      //       return { ...db, autoLoadEntities: true };
+      //     },
+      //     inject: [ConfigService],
+      //   }),
+      // );
     }
 
     // // 开启文件上传
@@ -229,6 +232,8 @@ export class GlobalModule {
     //   );
     // }
 
+    console.log('GlobalModule', imports);
+
     return {
       module: GlobalModule,
       imports,
@@ -239,9 +244,9 @@ export class GlobalModule {
           useValue: new ValidationPipe({ transform: true }),
         },
         // 异常过滤器
-        { provide: APP_FILTER, useClass: AllExceptionFilter },
+        // { provide: APP_FILTER, useClass: AllExceptionFilter },
         // 响应参数转化拦截器
-        { provide: APP_INTERCEPTOR, useClass: TransformInterceptor },
+        // { provide: APP_INTERCEPTOR, useClass: TransformInterceptor },
       ],
     };
   }
