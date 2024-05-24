@@ -1,71 +1,79 @@
-import { Injectable, ConsoleLogger } from '@nestjs/common';
-import { Logger, Configuration, configure, getLogger } from 'log4js';
+import {
+  Injectable,
+  LoggerService as CommonLoggerService,
+} from '@nestjs/common';
+import * as chalk from 'chalk';
+import * as dayjs from 'dayjs';
+import {
+  createLogger,
+  format,
+  Logger,
+  transports,
+  LoggerOptions,
+} from 'winston';
 
-export type LoggerServiceOptions = Partial<Configuration> & {
-  filename: string;
+export type LoggerServiceOptions = LoggerOptions & {
+  fileName: string;
 };
 
 /**
  * 拓展日志服务
- * 加入 log4js 日志文件写入
  */
 @Injectable()
-export class LoggerService extends ConsoleLogger {
-  log4js: Logger;
-  filename: string;
+export class LoggerService implements CommonLoggerService {
+  private logger: Logger;
 
   constructor(options?: LoggerServiceOptions) {
-    super();
-    const { filename = 'logs/all.log', ..._options } = options || {};
-    this.filename = filename;
+    this.logger = createLogger({
+      level: 'debug',
+      format: format.combine(format.colorize(), format.simple()),
+      transports: [
+        new transports.Console({
+          format: format.combine(
+            format.colorize(),
+            format.printf(({ context, level, message, time }) => {
+              const appStr = chalk.green(`[NEST]`);
+              const contextStr = chalk.yellow(`[${context}]`);
 
-    console.log('日志done');
-    configure({
-      appenders: {
-        all: {
-          filename,
-          type: 'dateFile',
-          // 配置 layout，此处使用自定义模式 pattern
-          layout: { type: 'pattern', pattern: '%d [%p] %m' },
-          // 日志文件按日期（天）切割
-          pattern: 'yyyy-MM-dd',
-          // 回滚旧的日志文件时，保证以 .log 结尾 （只有在 alwaysIncludePattern 为 false 生效）
-          keepFileExt: true,
-          // 输出的日志文件名是都始终包含 pattern 日期结尾
-          alwaysIncludePattern: true,
-          // 指定日志保留的天数
-          numBackups: 10,
-        },
-      },
-      categories: { default: { appenders: ['all'], level: 'all' } },
-      ..._options,
+              return `${appStr} ${time} ${level} ${contextStr} ${message} `;
+            }),
+          ),
+        }),
+        new transports.File({
+          format: format.combine(format.timestamp(), format.json()),
+          filename: options?.fileName || 'all.log',
+          dirname: 'logs',
+        }),
+      ],
     });
-
-    this.log4js = getLogger();
   }
 
-  log(message: any, trace: string) {
-    super.log.apply(this, [message, trace]);
-    this.log4js.info(trace, message);
+  getNow() {
+    return dayjs(Date.now()).format('YYYY-MM-DD HH:mm:ss');
   }
 
-  error(message: any, trace: string) {
-    super.error.apply(this, [message, trace]);
-    this.log4js.error(trace, message);
+  log(message: string, context?: any) {
+    const time = this.getNow();
+    this.logger.info(`${message}`, { context, time });
   }
 
-  warn(message: any, trace: string) {
-    super.warn.apply(this, [message, trace]);
-    this.log4js.warn(trace, message);
+  error(message: string, context?: any) {
+    const time = this.getNow();
+    this.logger.error(`${message}`, { context, time });
   }
 
-  debug(message: any, trace: string) {
-    super.debug.apply(this, [message, trace]);
-    this.log4js.debug(trace, message);
+  warn(message: string, context?: any) {
+    const time = this.getNow();
+    this.logger.warn(`${message}`, { context, time });
   }
 
-  verbose(message: any, trace: string) {
-    super.verbose.apply(this, [message, trace]);
-    this.log4js.info(trace, message);
+  debug(message: string, context?: any) {
+    const time = this.getNow();
+    this.logger.debug(`${message}`, { context, time });
+  }
+
+  verbose(message: string, context?: any) {
+    const time = this.getNow();
+    this.logger.verbose(`${message}`, { context, time });
   }
 }

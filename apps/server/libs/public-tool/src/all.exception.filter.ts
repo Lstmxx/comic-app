@@ -57,8 +57,8 @@ export class AllExceptionFilter implements ExceptionFilter {
     const resJson = { code, error, message };
 
     // 错误日志
-    this.loggerService.error(resJson, '响应错误');
-    this.loggerService.log(line, '请求结束');
+    this.loggerService.error('响应错误', resJson);
+    this.loggerService.log('请求结束', line);
 
     if (response instanceof TcpContext) {
       return throwError(() => new Error(exception));

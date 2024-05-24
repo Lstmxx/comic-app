@@ -11,6 +11,7 @@ import { CustomHttpModule, GlobalModule } from '@app/public-module';
     GlobalModule.forRoot({
       yamlFilePath: ['apps/server.yaml'],
       microservice: ['USER_SERVICE'],
+      serverName: 'server',
       cache: true,
       // upload: true,
       // aliOss: true,

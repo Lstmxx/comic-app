@@ -5,7 +5,11 @@ import { UserModule } from './user/user.module';
 @Module({
   imports: [
     GlobalModule.forRoot({
-      typeorm: true,
+      yamlFilePath: ['apps/use-server.yaml'],
+      serverName: 'user-service',
+      cache: true,
+      // upload: true,
+      // aliOss: true,
     }),
     UserModule,
   ],

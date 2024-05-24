@@ -1,4 +1,4 @@
-import { LoggerService } from '@app/public-module';
+import { WINSTON_LOGGER_TOKEN } from '@app/public-module';
 import {
   NestApplicationOptions,
   INestApplication,
@@ -8,10 +8,30 @@ import { ConfigService } from '@nestjs/config';
 import { NestFactory } from '@nestjs/core';
 import { MicroserviceOptions } from '@nestjs/microservices';
 import { mw } from 'request-ip';
+import { AllExceptionFilter } from './all.exception.filter';
+import { TransformInterceptor } from './transform.interceptor';
 
 type BootstrapOptions = NestApplicationOptions & {
   // 在服务启动之前执行
   before?: (app: INestApplication) => void;
+};
+
+const useCommonMiddleware = (app: INestApplication | INestMicroservice) => {
+  // 注入日志
+  const loggerService = app.get(WINSTON_LOGGER_TOKEN);
+  app.useLogger(loggerService);
+
+  const allExceptionFilter = new AllExceptionFilter(loggerService);
+  app.useGlobalFilters(allExceptionFilter);
+
+  const transFormInterceptor = new TransformInterceptor(loggerService);
+  app.useGlobalInterceptors(transFormInterceptor);
+
+  return {
+    loggerService,
+    allExceptionFilter,
+    transFormInterceptor,
+  };
 };
 
 export async function bootstrap(
@@ -30,9 +50,8 @@ export async function bootstrap(
 
   const server = configService.get('server');
   app.setGlobalPrefix(server.prefix);
-  // 注入日志
-  const loggerService = app.get(LoggerService);
-  app.useLogger(loggerService);
+
+  const { loggerService } = useCommonMiddleware(app);
 
   // 使用微服务
   // if (microservice) {
@@ -44,7 +63,7 @@ export async function bootstrap(
 
   // 捕获进程错误
   process.on('uncaughtException', function (err) {
-    loggerService.error(err, '进程异常');
+    loggerService.error('进程异常', err);
   });
 }
 
@@ -63,10 +82,11 @@ export async function microserviceBootstrap(
     options,
   );
 
-  // 注入日志
-  const loggerService = app.get(LoggerService);
-  app.useLogger(loggerService);
   before && before(app);
+  // 注入日志
+  const { loggerService } = useCommonMiddleware(app);
 
   app.listen();
+
+  loggerService.log('微服务启动成功', '');
 }

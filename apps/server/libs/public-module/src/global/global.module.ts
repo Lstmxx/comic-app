@@ -1,4 +1,4 @@
-import { APP_PIPE, APP_FILTER, APP_INTERCEPTOR } from '@nestjs/core';
+import { APP_PIPE } from '@nestjs/core';
 import { Module, DynamicModule, ValidationPipe } from '@nestjs/common';
 // import { CacheModule } from '@nestjs/cache-manager';
 import { ConfigModule, ConfigService } from '@nestjs/config';
@@ -7,11 +7,7 @@ import { ClientsModule } from '@nestjs/microservices';
 // import { MulterModule } from '@nestjs/platform-express';
 // import { TypeOrmModule } from '@nestjs/typeorm';
 
-import {
-  rootPath,
-  AllExceptionFilter,
-  TransformInterceptor,
-} from '@app/public-tool';
+import { rootPath } from '@app/public-tool';
 import { LoggerModule } from '../logger';
 // import { UploadModule } from '../upload';
 // import { AliSmsModule } from '../aliSms';
@@ -28,6 +24,7 @@ import { merge, cloneDeepWith } from 'lodash';
 // import nuid from 'nuid';
 
 export interface GlobalModuleOptions {
+  serverName: string;
   yamlFilePath?: string[]; // 配置文件路径
   microservice?: string[]; // 开启微服务模块
   typeorm?: boolean; // 开启 orm 模块
@@ -50,6 +47,7 @@ export class GlobalModule {
       yamlFilePath = [],
       microservice,
       typeorm,
+      serverName,
       // upload,
       // cache,
       // aliSms,
@@ -95,13 +93,7 @@ export class GlobalModule {
       }),
       // 日志模块
       LoggerModule.forRoot({
-        isGlobal: true,
-        useFactory: (configService: ConfigService) => {
-          const path = configService.get('logsPath');
-          console.log('logger');
-          return { filename: join(rootPath, `logs/${path}/${path}.log`) };
-        },
-        inject: [ConfigService],
+        fileName: join(rootPath, `logs/${serverName}.log`),
       }),
     ];
 
@@ -243,10 +235,6 @@ export class GlobalModule {
           provide: APP_PIPE,
           useValue: new ValidationPipe({ transform: true }),
         },
-        // 异常过滤器
-        // { provide: APP_FILTER, useClass: AllExceptionFilter },
-        // 响应参数转化拦截器
-        // { provide: APP_INTERCEPTOR, useClass: TransformInterceptor },
       ],
     };
   }

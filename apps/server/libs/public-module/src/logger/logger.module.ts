@@ -1,39 +1,25 @@
-import { Module, DynamicModule } from '@nestjs/common';
+import { Module, DynamicModule, Global } from '@nestjs/common';
 import { LoggerService, LoggerServiceOptions } from './logger.service';
 
-export interface LoggerModuleAsyncOptions {
-  isGlobal?: boolean; // 是否导出到全局
-  useFactory: (
-    ...args: any[]
-  ) => Promise<LoggerServiceOptions> | LoggerServiceOptions; // 动态配置
-  inject?: any[];
-}
+export const WINSTON_LOGGER_TOKEN = 'WINSTON_LOGGER';
 
 /**
  * 日志模块
  */
+@Global()
 @Module({})
 export class LoggerModule {
-  static forRoot({
-    isGlobal = false,
-    useFactory,
-    inject,
-  }: LoggerModuleAsyncOptions): DynamicModule {
+  public static forRoot(options: LoggerServiceOptions): DynamicModule {
     return {
-      global: isGlobal,
+      global: true,
       module: LoggerModule,
       providers: [
         {
-          provide: LoggerService,
-          useFactory: async (...args: any[]) => {
-            const options = await useFactory(...args);
-            console.log('options', options);
-            return new LoggerService(options);
-          },
-          inject,
+          provide: WINSTON_LOGGER_TOKEN,
+          useValue: new LoggerService(options),
         },
       ],
-      exports: [LoggerService],
+      exports: [WINSTON_LOGGER_TOKEN],
     };
   }
 }

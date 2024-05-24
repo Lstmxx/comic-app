@@ -3,7 +3,6 @@ import {
   NestInterceptor,
   ExecutionContext,
   CallHandler,
-  Inject,
 } from '@nestjs/common';
 import { TcpContext } from '@nestjs/microservices';
 import { Observable } from 'rxjs';
@@ -28,10 +27,7 @@ const interval = '/'.repeat(50);
 export class TransformInterceptor<T>
   implements NestInterceptor<T, Response<T>>
 {
-  constructor() {}
-
-  @Inject(LoggerService)
-  private readonly loggerService: LoggerService;
+  constructor(private readonly loggerService: LoggerService) {}
 
   intercept(
     context: ExecutionContext,
@@ -41,36 +37,36 @@ export class TransformInterceptor<T>
     const req = ctx.getRequest();
     const res = ctx.getResponse();
 
-    this.loggerService.log(interval, `第 ${++num} 次请求`);
-    this.loggerService.log(line, '请求接收');
+    this.loggerService.log(`第 ${++num} 次请求`, interval);
+    this.loggerService.log('请求接收', line);
 
     let resNext = next.handle();
 
     if (res instanceof TcpContext) {
-      this.loggerService.log(res.getPattern(), 'TCP 请求');
+      this.loggerService.log('TCP 请求', res.getPattern());
       if (Object.keys(req).length) {
         if (Array.isArray(req)) {
           for (const index in req) {
-            this.loggerService.log(req[index], `请求参数[${index}]`);
+            this.loggerService.log(`请求参数[${index}]`, req[index]);
           }
         } else {
-          this.loggerService.log(req, '请求参数');
+          this.loggerService.log('请求参数', req);
         }
       }
       // 避免返回空导致参数序列化错误
       resNext = resNext.pipe(map((data) => data || {}));
     } else {
       const { url, clientIp, method, body } = req;
-      this.loggerService.log(url, `${toIp(clientIp)} ${method}`);
-      Object.keys(body).length && this.loggerService.log(body, '请求参数');
+      this.loggerService.log(`${toIp(clientIp)} ${method}`, url);
+      Object.keys(body).length && this.loggerService.log('请求参数', body);
       // 响应参数转化为统一格式
       resNext = resNext.pipe(map((data) => ({ code: res.statusCode, data })));
     }
 
     return resNext.pipe(
       tap((res) => {
-        this.loggerService.log(res, '响应结果');
-        this.loggerService.log(line, '请求成功');
+        this.loggerService.log('响应结果', res);
+        this.loggerService.log('请求成功', line);
       }),
     );
   }
