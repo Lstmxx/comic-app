@@ -4,8 +4,9 @@ import { Transport } from '@nestjs/microservices';
 
 // 启动服务
 microserviceBootstrap(AppModule, {
-  transport: Transport.TCP,
+  transport: Transport.REDIS,
   options: {
-    port: 4001,
+    host: 'localhost',
+    port: 6379,
   },
 });

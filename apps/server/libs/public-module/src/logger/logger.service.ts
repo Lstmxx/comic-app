@@ -30,9 +30,14 @@ export class LoggerService implements CommonLoggerService {
       transports: [
         new transports.Console({
           format: format.combine(
+            format.errors({ stack: true }),
             format.colorize(),
             format.printf(({ context, level, message, time }) => {
               const appStr = chalk.green(`[NEST]`);
+              console.log('context', context);
+              if (typeof context === 'object') {
+                context = JSON.stringify(context);
+              }
               const contextStr = chalk.yellow(`[${context}]`);
 
               return `${appStr} ${time} ${level} ${contextStr} ${message} `;

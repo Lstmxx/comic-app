@@ -4,7 +4,7 @@ import {
   ExecutionContext,
   CallHandler,
 } from '@nestjs/common';
-import { TcpContext } from '@nestjs/microservices';
+import { RedisContext, TcpContext } from '@nestjs/microservices';
 import { Observable } from 'rxjs';
 import { map, tap } from 'rxjs/operators';
 import { LoggerService } from '@app/public-module';
@@ -55,6 +55,9 @@ export class TransformInterceptor<T>
       }
       // 避免返回空导致参数序列化错误
       resNext = resNext.pipe(map((data) => data || {}));
+    } else if (res instanceof RedisContext) {
+      this.loggerService.log('REDIS 请求', res.getChannel());
+      this.loggerService.log('请求参数', res.getArgs());
     } else {
       const { url, clientIp, method, body } = req;
       this.loggerService.log(`${toIp(clientIp)} ${method}`, url);

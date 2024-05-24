@@ -45,7 +45,7 @@ export class AllExceptionFilter implements ExceptionFilter {
       error = err;
       msg = Array.isArray(message) ? message[0] : message;
     } else {
-      this.loggerService.error(errorLog, '服务运行错误');
+      this.loggerService.error('服务运行错误', errorLog);
     }
 
     // 尽可能转为中文

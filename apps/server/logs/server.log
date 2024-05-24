@@ -83,3 +83,498 @@
 {"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"TagController {/api/tag}:","time":"2024-05-24 16:09:59","timestamp":"2024-05-24T08:09:59.275Z"}
 {"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/tag, GET} route","time":"2024-05-24 16:09:59","timestamp":"2024-05-24T08:09:59.275Z"}
 {"context":"NestApplication","level":"\u001b[32minfo\u001b[39m","message":"Nest application successfully started","time":"2024-05-24 16:09:59","timestamp":"2024-05-24T08:09:59.276Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"AppController {/api}:","time":"2024-05-24 16:47:37","timestamp":"2024-05-24T08:47:37.925Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api, GET} route","time":"2024-05-24 16:47:37","timestamp":"2024-05-24T08:47:37.927Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"UserController {/api/user}:","time":"2024-05-24 16:47:37","timestamp":"2024-05-24T08:47:37.927Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user, POST} route","time":"2024-05-24 16:47:37","timestamp":"2024-05-24T08:47:37.928Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user, GET} route","time":"2024-05-24 16:47:37","timestamp":"2024-05-24T08:47:37.928Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, GET} route","time":"2024-05-24 16:47:37","timestamp":"2024-05-24T08:47:37.928Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, PATCH} route","time":"2024-05-24 16:47:37","timestamp":"2024-05-24T08:47:37.929Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, DELETE} route","time":"2024-05-24 16:47:37","timestamp":"2024-05-24T08:47:37.929Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"ComicController {/api/comic}:","time":"2024-05-24 16:47:37","timestamp":"2024-05-24T08:47:37.929Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/list, GET} route","time":"2024-05-24 16:47:37","timestamp":"2024-05-24T08:47:37.929Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/search, GET} route","time":"2024-05-24 16:47:37","timestamp":"2024-05-24T08:47:37.930Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/chapter/detail, GET} route","time":"2024-05-24 16:47:37","timestamp":"2024-05-24T08:47:37.930Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/chapter, GET} route","time":"2024-05-24 16:47:37","timestamp":"2024-05-24T08:47:37.930Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/:name, GET} route","time":"2024-05-24 16:47:37","timestamp":"2024-05-24T08:47:37.930Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"TagController {/api/tag}:","time":"2024-05-24 16:47:37","timestamp":"2024-05-24T08:47:37.930Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/tag, GET} route","time":"2024-05-24 16:47:37","timestamp":"2024-05-24T08:47:37.930Z"}
+{"context":"NestApplication","level":"\u001b[32minfo\u001b[39m","message":"Nest application successfully started","time":"2024-05-24 16:47:37","timestamp":"2024-05-24T08:47:37.931Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"AppController {/api}:","time":"2024-05-24 16:56:03","timestamp":"2024-05-24T08:56:03.939Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api, GET} route","time":"2024-05-24 16:56:03","timestamp":"2024-05-24T08:56:03.940Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"UserController {/api/user}:","time":"2024-05-24 16:56:03","timestamp":"2024-05-24T08:56:03.940Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user, POST} route","time":"2024-05-24 16:56:03","timestamp":"2024-05-24T08:56:03.941Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user, GET} route","time":"2024-05-24 16:56:03","timestamp":"2024-05-24T08:56:03.941Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, GET} route","time":"2024-05-24 16:56:03","timestamp":"2024-05-24T08:56:03.941Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, PATCH} route","time":"2024-05-24 16:56:03","timestamp":"2024-05-24T08:56:03.942Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, DELETE} route","time":"2024-05-24 16:56:03","timestamp":"2024-05-24T08:56:03.942Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"ComicController {/api/comic}:","time":"2024-05-24 16:56:03","timestamp":"2024-05-24T08:56:03.942Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/list, GET} route","time":"2024-05-24 16:56:03","timestamp":"2024-05-24T08:56:03.942Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/search, GET} route","time":"2024-05-24 16:56:03","timestamp":"2024-05-24T08:56:03.943Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/chapter/detail, GET} route","time":"2024-05-24 16:56:03","timestamp":"2024-05-24T08:56:03.943Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/chapter, GET} route","time":"2024-05-24 16:56:03","timestamp":"2024-05-24T08:56:03.943Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/:name, GET} route","time":"2024-05-24 16:56:03","timestamp":"2024-05-24T08:56:03.943Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"TagController {/api/tag}:","time":"2024-05-24 16:56:03","timestamp":"2024-05-24T08:56:03.943Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/tag, GET} route","time":"2024-05-24 16:56:03","timestamp":"2024-05-24T08:56:03.943Z"}
+{"context":"NestApplication","level":"\u001b[32minfo\u001b[39m","message":"Nest application successfully started","time":"2024-05-24 16:56:03","timestamp":"2024-05-24T08:56:03.944Z"}
+{"context":"//////////////////////////////////////////////////","level":"\u001b[32minfo\u001b[39m","message":"第 1 次请求","time":"2024-05-24 16:58:17","timestamp":"2024-05-24T08:58:17.338Z"}
+{"context":"--------------------------------------------------","level":"\u001b[32minfo\u001b[39m","message":"请求接收","time":"2024-05-24 16:58:17","timestamp":"2024-05-24T08:58:17.338Z"}
+{"context":"/api/user","level":"\u001b[32minfo\u001b[39m","message":"127.0.0.1 GET","time":"2024-05-24 16:58:17","timestamp":"2024-05-24T08:58:17.339Z"}
+{"context":"服务运行错误","level":"\u001b[31merror\u001b[39m","message":"[object Object]","time":"2024-05-24 16:58:17","timestamp":"2024-05-24T08:58:17.364Z"}
+{"context":{"code":500,"error":"Internal Server Error","message":"服务器错误"},"level":"\u001b[31merror\u001b[39m","message":"响应错误","time":"2024-05-24 16:58:17","timestamp":"2024-05-24T08:58:17.364Z"}
+{"context":"--------------------------------------------------","level":"\u001b[32minfo\u001b[39m","message":"请求结束","time":"2024-05-24 16:58:17","timestamp":"2024-05-24T08:58:17.365Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"AppController {/api}:","time":"2024-05-24 16:59:16","timestamp":"2024-05-24T08:59:16.915Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api, GET} route","time":"2024-05-24 16:59:16","timestamp":"2024-05-24T08:59:16.917Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"UserController {/api/user}:","time":"2024-05-24 16:59:16","timestamp":"2024-05-24T08:59:16.917Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user, POST} route","time":"2024-05-24 16:59:16","timestamp":"2024-05-24T08:59:16.918Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user, GET} route","time":"2024-05-24 16:59:16","timestamp":"2024-05-24T08:59:16.918Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, GET} route","time":"2024-05-24 16:59:16","timestamp":"2024-05-24T08:59:16.919Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, PATCH} route","time":"2024-05-24 16:59:16","timestamp":"2024-05-24T08:59:16.919Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, DELETE} route","time":"2024-05-24 16:59:16","timestamp":"2024-05-24T08:59:16.919Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"ComicController {/api/comic}:","time":"2024-05-24 16:59:16","timestamp":"2024-05-24T08:59:16.919Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/list, GET} route","time":"2024-05-24 16:59:16","timestamp":"2024-05-24T08:59:16.920Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/search, GET} route","time":"2024-05-24 16:59:16","timestamp":"2024-05-24T08:59:16.920Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/chapter/detail, GET} route","time":"2024-05-24 16:59:16","timestamp":"2024-05-24T08:59:16.920Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/chapter, GET} route","time":"2024-05-24 16:59:16","timestamp":"2024-05-24T08:59:16.920Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/:name, GET} route","time":"2024-05-24 16:59:16","timestamp":"2024-05-24T08:59:16.920Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"TagController {/api/tag}:","time":"2024-05-24 16:59:16","timestamp":"2024-05-24T08:59:16.920Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/tag, GET} route","time":"2024-05-24 16:59:16","timestamp":"2024-05-24T08:59:16.921Z"}
+{"context":"NestApplication","level":"\u001b[32minfo\u001b[39m","message":"Nest application successfully started","time":"2024-05-24 16:59:16","timestamp":"2024-05-24T08:59:16.922Z"}
+{"context":"//////////////////////////////////////////////////","level":"\u001b[32minfo\u001b[39m","message":"第 1 次请求","time":"2024-05-24 16:59:20","timestamp":"2024-05-24T08:59:20.359Z"}
+{"context":"--------------------------------------------------","level":"\u001b[32minfo\u001b[39m","message":"请求接收","time":"2024-05-24 16:59:20","timestamp":"2024-05-24T08:59:20.360Z"}
+{"context":"/api/user","level":"\u001b[32minfo\u001b[39m","message":"127.0.0.1 GET","time":"2024-05-24 16:59:20","timestamp":"2024-05-24T08:59:20.360Z"}
+{"context":{},"level":"\u001b[31merror\u001b[39m","message":"服务运行错误","time":"2024-05-24 16:59:20","timestamp":"2024-05-24T08:59:20.384Z"}
+{"context":{"code":500,"error":"Internal Server Error","message":"服务器错误"},"level":"\u001b[31merror\u001b[39m","message":"响应错误","time":"2024-05-24 16:59:20","timestamp":"2024-05-24T08:59:20.384Z"}
+{"context":"--------------------------------------------------","level":"\u001b[32minfo\u001b[39m","message":"请求结束","time":"2024-05-24 16:59:20","timestamp":"2024-05-24T08:59:20.384Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"AppController {/api}:","time":"2024-05-24 17:01:25","timestamp":"2024-05-24T09:01:25.800Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api, GET} route","time":"2024-05-24 17:01:25","timestamp":"2024-05-24T09:01:25.802Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"UserController {/api/user}:","time":"2024-05-24 17:01:25","timestamp":"2024-05-24T09:01:25.802Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user, POST} route","time":"2024-05-24 17:01:25","timestamp":"2024-05-24T09:01:25.803Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user, GET} route","time":"2024-05-24 17:01:25","timestamp":"2024-05-24T09:01:25.803Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, GET} route","time":"2024-05-24 17:01:25","timestamp":"2024-05-24T09:01:25.803Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, PATCH} route","time":"2024-05-24 17:01:25","timestamp":"2024-05-24T09:01:25.804Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, DELETE} route","time":"2024-05-24 17:01:25","timestamp":"2024-05-24T09:01:25.804Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"ComicController {/api/comic}:","time":"2024-05-24 17:01:25","timestamp":"2024-05-24T09:01:25.804Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/list, GET} route","time":"2024-05-24 17:01:25","timestamp":"2024-05-24T09:01:25.805Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/search, GET} route","time":"2024-05-24 17:01:25","timestamp":"2024-05-24T09:01:25.805Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/chapter/detail, GET} route","time":"2024-05-24 17:01:25","timestamp":"2024-05-24T09:01:25.805Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/chapter, GET} route","time":"2024-05-24 17:01:25","timestamp":"2024-05-24T09:01:25.805Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/:name, GET} route","time":"2024-05-24 17:01:25","timestamp":"2024-05-24T09:01:25.805Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"TagController {/api/tag}:","time":"2024-05-24 17:01:25","timestamp":"2024-05-24T09:01:25.805Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/tag, GET} route","time":"2024-05-24 17:01:25","timestamp":"2024-05-24T09:01:25.806Z"}
+{"context":"NestApplication","level":"\u001b[32minfo\u001b[39m","message":"Nest application successfully started","time":"2024-05-24 17:01:25","timestamp":"2024-05-24T09:01:25.807Z"}
+{"context":"//////////////////////////////////////////////////","level":"\u001b[32minfo\u001b[39m","message":"第 1 次请求","time":"2024-05-24 17:01:29","timestamp":"2024-05-24T09:01:29.706Z"}
+{"context":"--------------------------------------------------","level":"\u001b[32minfo\u001b[39m","message":"请求接收","time":"2024-05-24 17:01:29","timestamp":"2024-05-24T09:01:29.707Z"}
+{"context":"/api/user","level":"\u001b[32minfo\u001b[39m","message":"127.0.0.1 GET","time":"2024-05-24 17:01:29","timestamp":"2024-05-24T09:01:29.707Z"}
+{"context":{},"level":"\u001b[31merror\u001b[39m","message":"服务运行错误","time":"2024-05-24 17:01:29","timestamp":"2024-05-24T09:01:29.731Z"}
+{"context":{"code":500,"error":"Internal Server Error","message":"服务器错误"},"level":"\u001b[31merror\u001b[39m","message":"响应错误","time":"2024-05-24 17:01:29","timestamp":"2024-05-24T09:01:29.732Z"}
+{"context":"--------------------------------------------------","level":"\u001b[32minfo\u001b[39m","message":"请求结束","time":"2024-05-24 17:01:29","timestamp":"2024-05-24T09:01:29.732Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"AppController {/api}:","time":"2024-05-24 17:02:09","timestamp":"2024-05-24T09:02:09.332Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api, GET} route","time":"2024-05-24 17:02:09","timestamp":"2024-05-24T09:02:09.334Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"UserController {/api/user}:","time":"2024-05-24 17:02:09","timestamp":"2024-05-24T09:02:09.334Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user, POST} route","time":"2024-05-24 17:02:09","timestamp":"2024-05-24T09:02:09.335Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user, GET} route","time":"2024-05-24 17:02:09","timestamp":"2024-05-24T09:02:09.335Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, GET} route","time":"2024-05-24 17:02:09","timestamp":"2024-05-24T09:02:09.335Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, PATCH} route","time":"2024-05-24 17:02:09","timestamp":"2024-05-24T09:02:09.336Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, DELETE} route","time":"2024-05-24 17:02:09","timestamp":"2024-05-24T09:02:09.336Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"ComicController {/api/comic}:","time":"2024-05-24 17:02:09","timestamp":"2024-05-24T09:02:09.337Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/list, GET} route","time":"2024-05-24 17:02:09","timestamp":"2024-05-24T09:02:09.337Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/search, GET} route","time":"2024-05-24 17:02:09","timestamp":"2024-05-24T09:02:09.337Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/chapter/detail, GET} route","time":"2024-05-24 17:02:09","timestamp":"2024-05-24T09:02:09.338Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/chapter, GET} route","time":"2024-05-24 17:02:09","timestamp":"2024-05-24T09:02:09.338Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/:name, GET} route","time":"2024-05-24 17:02:09","timestamp":"2024-05-24T09:02:09.338Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"TagController {/api/tag}:","time":"2024-05-24 17:02:09","timestamp":"2024-05-24T09:02:09.338Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/tag, GET} route","time":"2024-05-24 17:02:09","timestamp":"2024-05-24T09:02:09.338Z"}
+{"context":"NestApplication","level":"\u001b[32minfo\u001b[39m","message":"Nest application successfully started","time":"2024-05-24 17:02:09","timestamp":"2024-05-24T09:02:09.339Z"}
+{"context":"//////////////////////////////////////////////////","level":"\u001b[32minfo\u001b[39m","message":"第 1 次请求","time":"2024-05-24 17:02:12","timestamp":"2024-05-24T09:02:12.309Z"}
+{"context":"--------------------------------------------------","level":"\u001b[32minfo\u001b[39m","message":"请求接收","time":"2024-05-24 17:02:12","timestamp":"2024-05-24T09:02:12.309Z"}
+{"context":"/api/user","level":"\u001b[32minfo\u001b[39m","message":"127.0.0.1 GET","time":"2024-05-24 17:02:12","timestamp":"2024-05-24T09:02:12.310Z"}
+{"context":{},"level":"\u001b[31merror\u001b[39m","message":"服务运行错误","time":"2024-05-24 17:02:12","timestamp":"2024-05-24T09:02:12.344Z"}
+{"context":{"code":500,"error":"Internal Server Error","message":"服务器错误"},"level":"\u001b[31merror\u001b[39m","message":"响应错误","time":"2024-05-24 17:02:12","timestamp":"2024-05-24T09:02:12.344Z"}
+{"context":"--------------------------------------------------","level":"\u001b[32minfo\u001b[39m","message":"请求结束","time":"2024-05-24 17:02:12","timestamp":"2024-05-24T09:02:12.344Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"AppController {/api}:","time":"2024-05-24 17:02:20","timestamp":"2024-05-24T09:02:20.704Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api, GET} route","time":"2024-05-24 17:02:20","timestamp":"2024-05-24T09:02:20.705Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"UserController {/api/user}:","time":"2024-05-24 17:02:20","timestamp":"2024-05-24T09:02:20.706Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user, POST} route","time":"2024-05-24 17:02:20","timestamp":"2024-05-24T09:02:20.706Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user, GET} route","time":"2024-05-24 17:02:20","timestamp":"2024-05-24T09:02:20.706Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, GET} route","time":"2024-05-24 17:02:20","timestamp":"2024-05-24T09:02:20.707Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, PATCH} route","time":"2024-05-24 17:02:20","timestamp":"2024-05-24T09:02:20.707Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, DELETE} route","time":"2024-05-24 17:02:20","timestamp":"2024-05-24T09:02:20.708Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"ComicController {/api/comic}:","time":"2024-05-24 17:02:20","timestamp":"2024-05-24T09:02:20.708Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/list, GET} route","time":"2024-05-24 17:02:20","timestamp":"2024-05-24T09:02:20.708Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/search, GET} route","time":"2024-05-24 17:02:20","timestamp":"2024-05-24T09:02:20.708Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/chapter/detail, GET} route","time":"2024-05-24 17:02:20","timestamp":"2024-05-24T09:02:20.709Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/chapter, GET} route","time":"2024-05-24 17:02:20","timestamp":"2024-05-24T09:02:20.709Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/:name, GET} route","time":"2024-05-24 17:02:20","timestamp":"2024-05-24T09:02:20.709Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"TagController {/api/tag}:","time":"2024-05-24 17:02:20","timestamp":"2024-05-24T09:02:20.709Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/tag, GET} route","time":"2024-05-24 17:02:20","timestamp":"2024-05-24T09:02:20.709Z"}
+{"context":"NestApplication","level":"\u001b[32minfo\u001b[39m","message":"Nest application successfully started","time":"2024-05-24 17:02:20","timestamp":"2024-05-24T09:02:20.710Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"AppController {/api}:","time":"2024-05-24 17:03:00","timestamp":"2024-05-24T09:03:00.655Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api, GET} route","time":"2024-05-24 17:03:00","timestamp":"2024-05-24T09:03:00.656Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"UserController {/api/user}:","time":"2024-05-24 17:03:00","timestamp":"2024-05-24T09:03:00.657Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user, POST} route","time":"2024-05-24 17:03:00","timestamp":"2024-05-24T09:03:00.657Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user, GET} route","time":"2024-05-24 17:03:00","timestamp":"2024-05-24T09:03:00.657Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, GET} route","time":"2024-05-24 17:03:00","timestamp":"2024-05-24T09:03:00.658Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, PATCH} route","time":"2024-05-24 17:03:00","timestamp":"2024-05-24T09:03:00.658Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, DELETE} route","time":"2024-05-24 17:03:00","timestamp":"2024-05-24T09:03:00.658Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"ComicController {/api/comic}:","time":"2024-05-24 17:03:00","timestamp":"2024-05-24T09:03:00.658Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/list, GET} route","time":"2024-05-24 17:03:00","timestamp":"2024-05-24T09:03:00.659Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/search, GET} route","time":"2024-05-24 17:03:00","timestamp":"2024-05-24T09:03:00.659Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/chapter/detail, GET} route","time":"2024-05-24 17:03:00","timestamp":"2024-05-24T09:03:00.659Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/chapter, GET} route","time":"2024-05-24 17:03:00","timestamp":"2024-05-24T09:03:00.659Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/:name, GET} route","time":"2024-05-24 17:03:00","timestamp":"2024-05-24T09:03:00.659Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"TagController {/api/tag}:","time":"2024-05-24 17:03:00","timestamp":"2024-05-24T09:03:00.660Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/tag, GET} route","time":"2024-05-24 17:03:00","timestamp":"2024-05-24T09:03:00.660Z"}
+{"context":"NestApplication","level":"\u001b[32minfo\u001b[39m","message":"Nest application successfully started","time":"2024-05-24 17:03:00","timestamp":"2024-05-24T09:03:00.661Z"}
+{"context":"//////////////////////////////////////////////////","level":"\u001b[32minfo\u001b[39m","message":"第 1 次请求","time":"2024-05-24 17:03:07","timestamp":"2024-05-24T09:03:07.155Z"}
+{"context":"--------------------------------------------------","level":"\u001b[32minfo\u001b[39m","message":"请求接收","time":"2024-05-24 17:03:07","timestamp":"2024-05-24T09:03:07.156Z"}
+{"context":"/api/user","level":"\u001b[32minfo\u001b[39m","message":"127.0.0.1 GET","time":"2024-05-24 17:03:07","timestamp":"2024-05-24T09:03:07.156Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"服务运行错误","timestamp":"2024-05-24T09:03:07.189Z"}
+{"code":500,"error":"Internal Server Error","level":"\u001b[31merror\u001b[39m","message":"响应错误 服务器错误","timestamp":"2024-05-24T09:03:07.190Z"}
+{"context":"--------------------------------------------------","level":"\u001b[32minfo\u001b[39m","message":"请求结束","time":"2024-05-24 17:03:07","timestamp":"2024-05-24T09:03:07.190Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"AppController {/api}:","timestamp":"2024-05-24T09:03:45.379Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api, GET} route","timestamp":"2024-05-24T09:03:45.381Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"UserController {/api/user}:","timestamp":"2024-05-24T09:03:45.381Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user, POST} route","timestamp":"2024-05-24T09:03:45.382Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user, GET} route","timestamp":"2024-05-24T09:03:45.382Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, GET} route","timestamp":"2024-05-24T09:03:45.382Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, PATCH} route","timestamp":"2024-05-24T09:03:45.383Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, DELETE} route","timestamp":"2024-05-24T09:03:45.383Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"ComicController {/api/comic}:","timestamp":"2024-05-24T09:03:45.383Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/list, GET} route","timestamp":"2024-05-24T09:03:45.383Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/search, GET} route","timestamp":"2024-05-24T09:03:45.384Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/chapter/detail, GET} route","timestamp":"2024-05-24T09:03:45.384Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/chapter, GET} route","timestamp":"2024-05-24T09:03:45.384Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/:name, GET} route","timestamp":"2024-05-24T09:03:45.384Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"TagController {/api/tag}:","timestamp":"2024-05-24T09:03:45.384Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/tag, GET} route","timestamp":"2024-05-24T09:03:45.384Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Nest application successfully started","timestamp":"2024-05-24T09:03:45.385Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"AppController {/api}:","time":"2024-05-24 17:17:05","timestamp":"2024-05-24T09:17:05.615Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api, GET} route","time":"2024-05-24 17:17:05","timestamp":"2024-05-24T09:17:05.616Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"UserController {/api/user}:","time":"2024-05-24 17:17:05","timestamp":"2024-05-24T09:17:05.617Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user, POST} route","time":"2024-05-24 17:17:05","timestamp":"2024-05-24T09:17:05.617Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user, GET} route","time":"2024-05-24 17:17:05","timestamp":"2024-05-24T09:17:05.618Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, GET} route","time":"2024-05-24 17:17:05","timestamp":"2024-05-24T09:17:05.618Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, PATCH} route","time":"2024-05-24 17:17:05","timestamp":"2024-05-24T09:17:05.618Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, DELETE} route","time":"2024-05-24 17:17:05","timestamp":"2024-05-24T09:17:05.618Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"ComicController {/api/comic}:","time":"2024-05-24 17:17:05","timestamp":"2024-05-24T09:17:05.619Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/list, GET} route","time":"2024-05-24 17:17:05","timestamp":"2024-05-24T09:17:05.619Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/search, GET} route","time":"2024-05-24 17:17:05","timestamp":"2024-05-24T09:17:05.619Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/chapter/detail, GET} route","time":"2024-05-24 17:17:05","timestamp":"2024-05-24T09:17:05.620Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/chapter, GET} route","time":"2024-05-24 17:17:05","timestamp":"2024-05-24T09:17:05.620Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/:name, GET} route","time":"2024-05-24 17:17:05","timestamp":"2024-05-24T09:17:05.620Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"TagController {/api/tag}:","time":"2024-05-24 17:17:05","timestamp":"2024-05-24T09:17:05.620Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/tag, GET} route","time":"2024-05-24 17:17:05","timestamp":"2024-05-24T09:17:05.620Z"}
+{"context":"NestApplication","level":"\u001b[32minfo\u001b[39m","message":"Nest application successfully started","time":"2024-05-24 17:17:05","timestamp":"2024-05-24T09:17:05.621Z"}
+{"context":"//////////////////////////////////////////////////","level":"\u001b[32minfo\u001b[39m","message":"第 1 次请求","time":"2024-05-24 17:17:48","timestamp":"2024-05-24T09:17:48.633Z"}
+{"context":"--------------------------------------------------","level":"\u001b[32minfo\u001b[39m","message":"请求接收","time":"2024-05-24 17:17:48","timestamp":"2024-05-24T09:17:48.634Z"}
+{"context":"/api/user","level":"\u001b[32minfo\u001b[39m","message":"127.0.0.1 GET","time":"2024-05-24 17:17:48","timestamp":"2024-05-24T09:17:48.635Z"}
+{"context":{},"level":"\u001b[31merror\u001b[39m","message":"服务运行错误","time":"2024-05-24 17:17:48","timestamp":"2024-05-24T09:17:48.660Z"}
+{"context":{"code":500,"error":"Internal Server Error","message":"服务器错误"},"level":"\u001b[31merror\u001b[39m","message":"响应错误","time":"2024-05-24 17:17:48","timestamp":"2024-05-24T09:17:48.660Z"}
+{"context":"--------------------------------------------------","level":"\u001b[32minfo\u001b[39m","message":"请求结束","time":"2024-05-24 17:17:48","timestamp":"2024-05-24T09:17:48.660Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"AppController {/api}:","time":"2024-05-24 17:18:37","timestamp":"2024-05-24T09:18:37.503Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api, GET} route","time":"2024-05-24 17:18:37","timestamp":"2024-05-24T09:18:37.505Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"UserController {/api/user}:","time":"2024-05-24 17:18:37","timestamp":"2024-05-24T09:18:37.505Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user, POST} route","time":"2024-05-24 17:18:37","timestamp":"2024-05-24T09:18:37.506Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user, GET} route","time":"2024-05-24 17:18:37","timestamp":"2024-05-24T09:18:37.506Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, GET} route","time":"2024-05-24 17:18:37","timestamp":"2024-05-24T09:18:37.506Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, PATCH} route","time":"2024-05-24 17:18:37","timestamp":"2024-05-24T09:18:37.507Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, DELETE} route","time":"2024-05-24 17:18:37","timestamp":"2024-05-24T09:18:37.507Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"ComicController {/api/comic}:","time":"2024-05-24 17:18:37","timestamp":"2024-05-24T09:18:37.507Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/list, GET} route","time":"2024-05-24 17:18:37","timestamp":"2024-05-24T09:18:37.507Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/search, GET} route","time":"2024-05-24 17:18:37","timestamp":"2024-05-24T09:18:37.508Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/chapter/detail, GET} route","time":"2024-05-24 17:18:37","timestamp":"2024-05-24T09:18:37.508Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/chapter, GET} route","time":"2024-05-24 17:18:37","timestamp":"2024-05-24T09:18:37.508Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/:name, GET} route","time":"2024-05-24 17:18:37","timestamp":"2024-05-24T09:18:37.508Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"TagController {/api/tag}:","time":"2024-05-24 17:18:37","timestamp":"2024-05-24T09:18:37.508Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/tag, GET} route","time":"2024-05-24 17:18:37","timestamp":"2024-05-24T09:18:37.508Z"}
+{"context":"NestApplication","level":"\u001b[32minfo\u001b[39m","message":"Nest application successfully started","time":"2024-05-24 17:18:37","timestamp":"2024-05-24T09:18:37.509Z"}
+{"context":"//////////////////////////////////////////////////","level":"\u001b[32minfo\u001b[39m","message":"第 1 次请求","time":"2024-05-24 17:18:50","timestamp":"2024-05-24T09:18:50.596Z"}
+{"context":"--------------------------------------------------","level":"\u001b[32minfo\u001b[39m","message":"请求接收","time":"2024-05-24 17:18:50","timestamp":"2024-05-24T09:18:50.596Z"}
+{"context":"/api/user","level":"\u001b[32minfo\u001b[39m","message":"127.0.0.1 GET","time":"2024-05-24 17:18:50","timestamp":"2024-05-24T09:18:50.597Z"}
+{"context":{},"level":"\u001b[31merror\u001b[39m","message":"服务运行错误","time":"2024-05-24 17:18:50","timestamp":"2024-05-24T09:18:50.620Z"}
+{"context":{"code":500,"error":"Internal Server Error","message":"服务器错误"},"level":"\u001b[31merror\u001b[39m","message":"响应错误","time":"2024-05-24 17:18:50","timestamp":"2024-05-24T09:18:50.620Z"}
+{"context":"--------------------------------------------------","level":"\u001b[32minfo\u001b[39m","message":"请求结束","time":"2024-05-24 17:18:50","timestamp":"2024-05-24T09:18:50.621Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"AppController {/api}:","timestamp":"2024-05-24T09:19:15.275Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api, GET} route","timestamp":"2024-05-24T09:19:15.276Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"UserController {/api/user}:","timestamp":"2024-05-24T09:19:15.277Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user, POST} route","timestamp":"2024-05-24T09:19:15.277Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user, GET} route","timestamp":"2024-05-24T09:19:15.277Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, GET} route","timestamp":"2024-05-24T09:19:15.278Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, PATCH} route","timestamp":"2024-05-24T09:19:15.278Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, DELETE} route","timestamp":"2024-05-24T09:19:15.278Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"ComicController {/api/comic}:","timestamp":"2024-05-24T09:19:15.278Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/list, GET} route","timestamp":"2024-05-24T09:19:15.279Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/search, GET} route","timestamp":"2024-05-24T09:19:15.279Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/chapter/detail, GET} route","timestamp":"2024-05-24T09:19:15.279Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/chapter, GET} route","timestamp":"2024-05-24T09:19:15.280Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/:name, GET} route","timestamp":"2024-05-24T09:19:15.280Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"TagController {/api/tag}:","timestamp":"2024-05-24T09:19:15.280Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/tag, GET} route","timestamp":"2024-05-24T09:19:15.280Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Nest application successfully started","timestamp":"2024-05-24T09:19:15.281Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"第 1 次请求","timestamp":"2024-05-24T09:19:50.117Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"请求接收","timestamp":"2024-05-24T09:19:50.118Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"127.0.0.1 GET","timestamp":"2024-05-24T09:19:50.119Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"服务运行错误","timestamp":"2024-05-24T09:19:50.152Z"}
+{"code":500,"error":"Internal Server Error","level":"\u001b[31merror\u001b[39m","message":"响应错误 服务器错误","timestamp":"2024-05-24T09:19:50.153Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"请求结束","timestamp":"2024-05-24T09:19:50.153Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"AppController {/api}:","time":"2024-05-24 17:20:27","timestamp":"2024-05-24T09:20:27.788Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api, GET} route","time":"2024-05-24 17:20:27","timestamp":"2024-05-24T09:20:27.790Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"UserController {/api/user}:","time":"2024-05-24 17:20:27","timestamp":"2024-05-24T09:20:27.790Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user, POST} route","time":"2024-05-24 17:20:27","timestamp":"2024-05-24T09:20:27.791Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user, GET} route","time":"2024-05-24 17:20:27","timestamp":"2024-05-24T09:20:27.791Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, GET} route","time":"2024-05-24 17:20:27","timestamp":"2024-05-24T09:20:27.791Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, PATCH} route","time":"2024-05-24 17:20:27","timestamp":"2024-05-24T09:20:27.792Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, DELETE} route","time":"2024-05-24 17:20:27","timestamp":"2024-05-24T09:20:27.792Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"ComicController {/api/comic}:","time":"2024-05-24 17:20:27","timestamp":"2024-05-24T09:20:27.792Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/list, GET} route","time":"2024-05-24 17:20:27","timestamp":"2024-05-24T09:20:27.792Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/search, GET} route","time":"2024-05-24 17:20:27","timestamp":"2024-05-24T09:20:27.793Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/chapter/detail, GET} route","time":"2024-05-24 17:20:27","timestamp":"2024-05-24T09:20:27.793Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/chapter, GET} route","time":"2024-05-24 17:20:27","timestamp":"2024-05-24T09:20:27.793Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/:name, GET} route","time":"2024-05-24 17:20:27","timestamp":"2024-05-24T09:20:27.793Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"TagController {/api/tag}:","time":"2024-05-24 17:20:27","timestamp":"2024-05-24T09:20:27.793Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/tag, GET} route","time":"2024-05-24 17:20:27","timestamp":"2024-05-24T09:20:27.793Z"}
+{"context":"NestApplication","level":"\u001b[32minfo\u001b[39m","message":"Nest application successfully started","time":"2024-05-24 17:20:27","timestamp":"2024-05-24T09:20:27.794Z"}
+{"context":"//////////////////////////////////////////////////","level":"\u001b[32minfo\u001b[39m","message":"第 1 次请求","time":"2024-05-24 17:20:45","timestamp":"2024-05-24T09:20:45.092Z"}
+{"context":"--------------------------------------------------","level":"\u001b[32minfo\u001b[39m","message":"请求接收","time":"2024-05-24 17:20:45","timestamp":"2024-05-24T09:20:45.093Z"}
+{"context":"/api/user","level":"\u001b[32minfo\u001b[39m","message":"127.0.0.1 GET","time":"2024-05-24 17:20:45","timestamp":"2024-05-24T09:20:45.093Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"服务运行错误","timestamp":"2024-05-24T09:20:45.126Z"}
+{"code":500,"error":"Internal Server Error","level":"\u001b[31merror\u001b[39m","message":"响应错误 服务器错误","timestamp":"2024-05-24T09:20:45.126Z"}
+{"context":"--------------------------------------------------","level":"\u001b[32minfo\u001b[39m","message":"请求结束","time":"2024-05-24 17:20:45","timestamp":"2024-05-24T09:20:45.126Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"AppController {/api}:","time":"2024-05-24 17:21:00","timestamp":"2024-05-24T09:21:00.985Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api, GET} route","time":"2024-05-24 17:21:00","timestamp":"2024-05-24T09:21:00.987Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"UserController {/api/user}:","time":"2024-05-24 17:21:00","timestamp":"2024-05-24T09:21:00.987Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user, POST} route","time":"2024-05-24 17:21:00","timestamp":"2024-05-24T09:21:00.988Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user, GET} route","time":"2024-05-24 17:21:00","timestamp":"2024-05-24T09:21:00.988Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, GET} route","time":"2024-05-24 17:21:00","timestamp":"2024-05-24T09:21:00.988Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, PATCH} route","time":"2024-05-24 17:21:00","timestamp":"2024-05-24T09:21:00.989Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, DELETE} route","time":"2024-05-24 17:21:00","timestamp":"2024-05-24T09:21:00.989Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"ComicController {/api/comic}:","time":"2024-05-24 17:21:00","timestamp":"2024-05-24T09:21:00.989Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/list, GET} route","time":"2024-05-24 17:21:00","timestamp":"2024-05-24T09:21:00.989Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/search, GET} route","time":"2024-05-24 17:21:00","timestamp":"2024-05-24T09:21:00.990Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/chapter/detail, GET} route","time":"2024-05-24 17:21:00","timestamp":"2024-05-24T09:21:00.990Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/chapter, GET} route","time":"2024-05-24 17:21:00","timestamp":"2024-05-24T09:21:00.990Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/:name, GET} route","time":"2024-05-24 17:21:00","timestamp":"2024-05-24T09:21:00.990Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"TagController {/api/tag}:","time":"2024-05-24 17:21:00","timestamp":"2024-05-24T09:21:00.990Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/tag, GET} route","time":"2024-05-24 17:21:00","timestamp":"2024-05-24T09:21:00.990Z"}
+{"context":"NestApplication","level":"\u001b[32minfo\u001b[39m","message":"Nest application successfully started","time":"2024-05-24 17:21:00","timestamp":"2024-05-24T09:21:00.991Z"}
+{"context":"//////////////////////////////////////////////////","level":"\u001b[32minfo\u001b[39m","message":"第 1 次请求","time":"2024-05-24 17:21:04","timestamp":"2024-05-24T09:21:04.785Z"}
+{"context":"--------------------------------------------------","level":"\u001b[32minfo\u001b[39m","message":"请求接收","time":"2024-05-24 17:21:04","timestamp":"2024-05-24T09:21:04.786Z"}
+{"context":"/api/user","level":"\u001b[32minfo\u001b[39m","message":"127.0.0.1 GET","time":"2024-05-24 17:21:04","timestamp":"2024-05-24T09:21:04.787Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"服务运行错误","timestamp":"2024-05-24T09:21:04.819Z"}
+{"code":500,"error":"Internal Server Error","level":"\u001b[31merror\u001b[39m","message":"响应错误 服务器错误","timestamp":"2024-05-24T09:21:04.819Z"}
+{"context":"--------------------------------------------------","level":"\u001b[32minfo\u001b[39m","message":"请求结束","time":"2024-05-24 17:21:04","timestamp":"2024-05-24T09:21:04.819Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"AppController {/api}:","time":"2024-05-24 17:21:46","timestamp":"2024-05-24T09:21:46.904Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api, GET} route","time":"2024-05-24 17:21:46","timestamp":"2024-05-24T09:21:46.905Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"UserController {/api/user}:","time":"2024-05-24 17:21:46","timestamp":"2024-05-24T09:21:46.906Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user, POST} route","time":"2024-05-24 17:21:46","timestamp":"2024-05-24T09:21:46.906Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user, GET} route","time":"2024-05-24 17:21:46","timestamp":"2024-05-24T09:21:46.907Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, GET} route","time":"2024-05-24 17:21:46","timestamp":"2024-05-24T09:21:46.907Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, PATCH} route","time":"2024-05-24 17:21:46","timestamp":"2024-05-24T09:21:46.907Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, DELETE} route","time":"2024-05-24 17:21:46","timestamp":"2024-05-24T09:21:46.908Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"ComicController {/api/comic}:","time":"2024-05-24 17:21:46","timestamp":"2024-05-24T09:21:46.908Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/list, GET} route","time":"2024-05-24 17:21:46","timestamp":"2024-05-24T09:21:46.908Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/search, GET} route","time":"2024-05-24 17:21:46","timestamp":"2024-05-24T09:21:46.909Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/chapter/detail, GET} route","time":"2024-05-24 17:21:46","timestamp":"2024-05-24T09:21:46.909Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/chapter, GET} route","time":"2024-05-24 17:21:46","timestamp":"2024-05-24T09:21:46.909Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/:name, GET} route","time":"2024-05-24 17:21:46","timestamp":"2024-05-24T09:21:46.909Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"TagController {/api/tag}:","time":"2024-05-24 17:21:46","timestamp":"2024-05-24T09:21:46.909Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/tag, GET} route","time":"2024-05-24 17:21:46","timestamp":"2024-05-24T09:21:46.910Z"}
+{"context":"NestApplication","level":"\u001b[32minfo\u001b[39m","message":"Nest application successfully started","time":"2024-05-24 17:21:46","timestamp":"2024-05-24T09:21:46.911Z"}
+{"context":"//////////////////////////////////////////////////","level":"\u001b[32minfo\u001b[39m","message":"第 1 次请求","time":"2024-05-24 17:21:50","timestamp":"2024-05-24T09:21:50.307Z"}
+{"context":"--------------------------------------------------","level":"\u001b[32minfo\u001b[39m","message":"请求接收","time":"2024-05-24 17:21:50","timestamp":"2024-05-24T09:21:50.308Z"}
+{"context":"/api/user","level":"\u001b[32minfo\u001b[39m","message":"127.0.0.1 GET","time":"2024-05-24 17:21:50","timestamp":"2024-05-24T09:21:50.309Z"}
+{"context":{},"level":"\u001b[31merror\u001b[39m","message":"服务运行错误","time":"2024-05-24 17:21:50","timestamp":"2024-05-24T09:21:50.349Z"}
+{"context":{"code":500,"error":"Internal Server Error","message":"服务器错误"},"level":"\u001b[31merror\u001b[39m","message":"响应错误","time":"2024-05-24 17:21:50","timestamp":"2024-05-24T09:21:50.351Z"}
+{"context":"--------------------------------------------------","level":"\u001b[32minfo\u001b[39m","message":"请求结束","time":"2024-05-24 17:21:50","timestamp":"2024-05-24T09:21:50.352Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"AppController {/api}:","time":"2024-05-24 17:23:55","timestamp":"2024-05-24T09:23:55.740Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api, GET} route","time":"2024-05-24 17:23:55","timestamp":"2024-05-24T09:23:55.742Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"UserController {/api/user}:","time":"2024-05-24 17:23:55","timestamp":"2024-05-24T09:23:55.742Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user, POST} route","time":"2024-05-24 17:23:55","timestamp":"2024-05-24T09:23:55.743Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user, GET} route","time":"2024-05-24 17:23:55","timestamp":"2024-05-24T09:23:55.743Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, GET} route","time":"2024-05-24 17:23:55","timestamp":"2024-05-24T09:23:55.744Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, PATCH} route","time":"2024-05-24 17:23:55","timestamp":"2024-05-24T09:23:55.744Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, DELETE} route","time":"2024-05-24 17:23:55","timestamp":"2024-05-24T09:23:55.745Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"ComicController {/api/comic}:","time":"2024-05-24 17:23:55","timestamp":"2024-05-24T09:23:55.745Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/list, GET} route","time":"2024-05-24 17:23:55","timestamp":"2024-05-24T09:23:55.745Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/search, GET} route","time":"2024-05-24 17:23:55","timestamp":"2024-05-24T09:23:55.746Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/chapter/detail, GET} route","time":"2024-05-24 17:23:55","timestamp":"2024-05-24T09:23:55.746Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/chapter, GET} route","time":"2024-05-24 17:23:55","timestamp":"2024-05-24T09:23:55.746Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/:name, GET} route","time":"2024-05-24 17:23:55","timestamp":"2024-05-24T09:23:55.746Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"TagController {/api/tag}:","time":"2024-05-24 17:23:55","timestamp":"2024-05-24T09:23:55.746Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/tag, GET} route","time":"2024-05-24 17:23:55","timestamp":"2024-05-24T09:23:55.747Z"}
+{"context":"NestApplication","level":"\u001b[32minfo\u001b[39m","message":"Nest application successfully started","time":"2024-05-24 17:23:55","timestamp":"2024-05-24T09:23:55.748Z"}
+{"context":"//////////////////////////////////////////////////","level":"\u001b[32minfo\u001b[39m","message":"第 1 次请求","time":"2024-05-24 17:24:01","timestamp":"2024-05-24T09:24:01.153Z"}
+{"context":"--------------------------------------------------","level":"\u001b[32minfo\u001b[39m","message":"请求接收","time":"2024-05-24 17:24:01","timestamp":"2024-05-24T09:24:01.153Z"}
+{"context":"/api/user","level":"\u001b[32minfo\u001b[39m","message":"127.0.0.1 GET","time":"2024-05-24 17:24:01","timestamp":"2024-05-24T09:24:01.153Z"}
+{"context":{},"level":"\u001b[31merror\u001b[39m","message":"服务运行错误","time":"2024-05-24 17:24:01","timestamp":"2024-05-24T09:24:01.172Z"}
+{"context":{"code":500,"error":"Internal Server Error","message":"服务器错误"},"level":"\u001b[31merror\u001b[39m","message":"响应错误","time":"2024-05-24 17:24:01","timestamp":"2024-05-24T09:24:01.172Z"}
+{"context":"--------------------------------------------------","level":"\u001b[32minfo\u001b[39m","message":"请求结束","time":"2024-05-24 17:24:01","timestamp":"2024-05-24T09:24:01.172Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"AppController {/api}:","time":"2024-05-24 17:25:24","timestamp":"2024-05-24T09:25:24.292Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api, GET} route","time":"2024-05-24 17:25:24","timestamp":"2024-05-24T09:25:24.294Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"UserController {/api/user}:","time":"2024-05-24 17:25:24","timestamp":"2024-05-24T09:25:24.295Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user, POST} route","time":"2024-05-24 17:25:24","timestamp":"2024-05-24T09:25:24.295Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user, GET} route","time":"2024-05-24 17:25:24","timestamp":"2024-05-24T09:25:24.295Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, GET} route","time":"2024-05-24 17:25:24","timestamp":"2024-05-24T09:25:24.296Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, PATCH} route","time":"2024-05-24 17:25:24","timestamp":"2024-05-24T09:25:24.296Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, DELETE} route","time":"2024-05-24 17:25:24","timestamp":"2024-05-24T09:25:24.296Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"ComicController {/api/comic}:","time":"2024-05-24 17:25:24","timestamp":"2024-05-24T09:25:24.297Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/list, GET} route","time":"2024-05-24 17:25:24","timestamp":"2024-05-24T09:25:24.297Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/search, GET} route","time":"2024-05-24 17:25:24","timestamp":"2024-05-24T09:25:24.297Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/chapter/detail, GET} route","time":"2024-05-24 17:25:24","timestamp":"2024-05-24T09:25:24.297Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/chapter, GET} route","time":"2024-05-24 17:25:24","timestamp":"2024-05-24T09:25:24.298Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/:name, GET} route","time":"2024-05-24 17:25:24","timestamp":"2024-05-24T09:25:24.298Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"TagController {/api/tag}:","time":"2024-05-24 17:25:24","timestamp":"2024-05-24T09:25:24.298Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/tag, GET} route","time":"2024-05-24 17:25:24","timestamp":"2024-05-24T09:25:24.298Z"}
+{"context":"NestApplication","level":"\u001b[32minfo\u001b[39m","message":"Nest application successfully started","time":"2024-05-24 17:25:24","timestamp":"2024-05-24T09:25:24.299Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"AppController {/api}:","time":"2024-05-24 17:25:42","timestamp":"2024-05-24T09:25:42.795Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api, GET} route","time":"2024-05-24 17:25:42","timestamp":"2024-05-24T09:25:42.797Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"UserController {/api/user}:","time":"2024-05-24 17:25:42","timestamp":"2024-05-24T09:25:42.797Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user, POST} route","time":"2024-05-24 17:25:42","timestamp":"2024-05-24T09:25:42.798Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user, GET} route","time":"2024-05-24 17:25:42","timestamp":"2024-05-24T09:25:42.798Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, GET} route","time":"2024-05-24 17:25:42","timestamp":"2024-05-24T09:25:42.799Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, PATCH} route","time":"2024-05-24 17:25:42","timestamp":"2024-05-24T09:25:42.799Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, DELETE} route","time":"2024-05-24 17:25:42","timestamp":"2024-05-24T09:25:42.799Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"ComicController {/api/comic}:","time":"2024-05-24 17:25:42","timestamp":"2024-05-24T09:25:42.800Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/list, GET} route","time":"2024-05-24 17:25:42","timestamp":"2024-05-24T09:25:42.800Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/search, GET} route","time":"2024-05-24 17:25:42","timestamp":"2024-05-24T09:25:42.800Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/chapter/detail, GET} route","time":"2024-05-24 17:25:42","timestamp":"2024-05-24T09:25:42.801Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/chapter, GET} route","time":"2024-05-24 17:25:42","timestamp":"2024-05-24T09:25:42.801Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/:name, GET} route","time":"2024-05-24 17:25:42","timestamp":"2024-05-24T09:25:42.801Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"TagController {/api/tag}:","time":"2024-05-24 17:25:42","timestamp":"2024-05-24T09:25:42.801Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/tag, GET} route","time":"2024-05-24 17:25:42","timestamp":"2024-05-24T09:25:42.801Z"}
+{"context":"NestApplication","level":"\u001b[32minfo\u001b[39m","message":"Nest application successfully started","time":"2024-05-24 17:25:42","timestamp":"2024-05-24T09:25:42.802Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"AppController {/api}:","timestamp":"2024-05-24T09:27:30.424Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api, GET} route","timestamp":"2024-05-24T09:27:30.425Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"UserController {/api/user}:","timestamp":"2024-05-24T09:27:30.425Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user, POST} route","timestamp":"2024-05-24T09:27:30.426Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user, GET} route","timestamp":"2024-05-24T09:27:30.427Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, GET} route","timestamp":"2024-05-24T09:27:30.427Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, PATCH} route","timestamp":"2024-05-24T09:27:30.427Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, DELETE} route","timestamp":"2024-05-24T09:27:30.428Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"ComicController {/api/comic}:","timestamp":"2024-05-24T09:27:30.428Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/list, GET} route","timestamp":"2024-05-24T09:27:30.428Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/search, GET} route","timestamp":"2024-05-24T09:27:30.429Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/chapter/detail, GET} route","timestamp":"2024-05-24T09:27:30.429Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/chapter, GET} route","timestamp":"2024-05-24T09:27:30.429Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/:name, GET} route","timestamp":"2024-05-24T09:27:30.429Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"TagController {/api/tag}:","timestamp":"2024-05-24T09:27:30.429Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/tag, GET} route","timestamp":"2024-05-24T09:27:30.429Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Nest application successfully started","timestamp":"2024-05-24T09:27:30.430Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"AppController {/api}:","time":"2024-05-24 17:28:34","timestamp":"2024-05-24T09:28:34.886Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api, GET} route","time":"2024-05-24 17:28:34","timestamp":"2024-05-24T09:28:34.888Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"UserController {/api/user}:","time":"2024-05-24 17:28:34","timestamp":"2024-05-24T09:28:34.888Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user, POST} route","time":"2024-05-24 17:28:34","timestamp":"2024-05-24T09:28:34.889Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user, GET} route","time":"2024-05-24 17:28:34","timestamp":"2024-05-24T09:28:34.889Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, GET} route","time":"2024-05-24 17:28:34","timestamp":"2024-05-24T09:28:34.890Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, PATCH} route","time":"2024-05-24 17:28:34","timestamp":"2024-05-24T09:28:34.890Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, DELETE} route","time":"2024-05-24 17:28:34","timestamp":"2024-05-24T09:28:34.890Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"ComicController {/api/comic}:","time":"2024-05-24 17:28:34","timestamp":"2024-05-24T09:28:34.891Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/list, GET} route","time":"2024-05-24 17:28:34","timestamp":"2024-05-24T09:28:34.891Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/search, GET} route","time":"2024-05-24 17:28:34","timestamp":"2024-05-24T09:28:34.891Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/chapter/detail, GET} route","time":"2024-05-24 17:28:34","timestamp":"2024-05-24T09:28:34.892Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/chapter, GET} route","time":"2024-05-24 17:28:34","timestamp":"2024-05-24T09:28:34.892Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/:name, GET} route","time":"2024-05-24 17:28:34","timestamp":"2024-05-24T09:28:34.892Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"TagController {/api/tag}:","time":"2024-05-24 17:28:34","timestamp":"2024-05-24T09:28:34.892Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/tag, GET} route","time":"2024-05-24 17:28:34","timestamp":"2024-05-24T09:28:34.892Z"}
+{"context":"NestApplication","level":"\u001b[32minfo\u001b[39m","message":"Nest application successfully started","time":"2024-05-24 17:28:34","timestamp":"2024-05-24T09:28:34.893Z"}
+{"context":"//////////////////////////////////////////////////","level":"\u001b[32minfo\u001b[39m","message":"第 1 次请求","time":"2024-05-24 17:28:51","timestamp":"2024-05-24T09:28:51.991Z"}
+{"context":"--------------------------------------------------","level":"\u001b[32minfo\u001b[39m","message":"请求接收","time":"2024-05-24 17:28:51","timestamp":"2024-05-24T09:28:51.991Z"}
+{"context":"/api/user","level":"\u001b[32minfo\u001b[39m","message":"127.0.0.1 GET","time":"2024-05-24 17:28:51","timestamp":"2024-05-24T09:28:51.992Z"}
+{"context":{},"level":"\u001b[31merror\u001b[39m","message":"服务运行错误","time":"2024-05-24 17:28:52","timestamp":"2024-05-24T09:28:52.024Z"}
+{"context":{"code":500,"error":"Internal Server Error","message":"服务器错误"},"level":"\u001b[31merror\u001b[39m","message":"响应错误","time":"2024-05-24 17:28:52","timestamp":"2024-05-24T09:28:52.025Z"}
+{"context":"--------------------------------------------------","level":"\u001b[32minfo\u001b[39m","message":"请求结束","time":"2024-05-24 17:28:52","timestamp":"2024-05-24T09:28:52.025Z"}
+{"context":"//////////////////////////////////////////////////","level":"\u001b[32minfo\u001b[39m","message":"第 2 次请求","time":"2024-05-24 17:29:35","timestamp":"2024-05-24T09:29:35.349Z"}
+{"context":"--------------------------------------------------","level":"\u001b[32minfo\u001b[39m","message":"请求接收","time":"2024-05-24 17:29:35","timestamp":"2024-05-24T09:29:35.350Z"}
+{"context":"/api/user","level":"\u001b[32minfo\u001b[39m","message":"127.0.0.1 GET","time":"2024-05-24 17:29:35","timestamp":"2024-05-24T09:29:35.350Z"}
+{"context":{},"level":"\u001b[31merror\u001b[39m","message":"服务运行错误","time":"2024-05-24 17:29:35","timestamp":"2024-05-24T09:29:35.371Z"}
+{"context":{"code":500,"error":"Internal Server Error","message":"服务器错误"},"level":"\u001b[31merror\u001b[39m","message":"响应错误","time":"2024-05-24 17:29:35","timestamp":"2024-05-24T09:29:35.372Z"}
+{"context":"--------------------------------------------------","level":"\u001b[32minfo\u001b[39m","message":"请求结束","time":"2024-05-24 17:29:35","timestamp":"2024-05-24T09:29:35.372Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"AppController {/api}:","time":"2024-05-24 17:32:32","timestamp":"2024-05-24T09:32:32.696Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api, GET} route","time":"2024-05-24 17:32:32","timestamp":"2024-05-24T09:32:32.698Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"UserController {/api/user}:","time":"2024-05-24 17:32:32","timestamp":"2024-05-24T09:32:32.698Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user, POST} route","time":"2024-05-24 17:32:32","timestamp":"2024-05-24T09:32:32.698Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user, GET} route","time":"2024-05-24 17:32:32","timestamp":"2024-05-24T09:32:32.699Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, GET} route","time":"2024-05-24 17:32:32","timestamp":"2024-05-24T09:32:32.699Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, PATCH} route","time":"2024-05-24 17:32:32","timestamp":"2024-05-24T09:32:32.699Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, DELETE} route","time":"2024-05-24 17:32:32","timestamp":"2024-05-24T09:32:32.700Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"ComicController {/api/comic}:","time":"2024-05-24 17:32:32","timestamp":"2024-05-24T09:32:32.700Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/list, GET} route","time":"2024-05-24 17:32:32","timestamp":"2024-05-24T09:32:32.700Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/search, GET} route","time":"2024-05-24 17:32:32","timestamp":"2024-05-24T09:32:32.700Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/chapter/detail, GET} route","time":"2024-05-24 17:32:32","timestamp":"2024-05-24T09:32:32.701Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/chapter, GET} route","time":"2024-05-24 17:32:32","timestamp":"2024-05-24T09:32:32.701Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/:name, GET} route","time":"2024-05-24 17:32:32","timestamp":"2024-05-24T09:32:32.701Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"TagController {/api/tag}:","time":"2024-05-24 17:32:32","timestamp":"2024-05-24T09:32:32.701Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/tag, GET} route","time":"2024-05-24 17:32:32","timestamp":"2024-05-24T09:32:32.702Z"}
+{"context":"NestApplication","level":"\u001b[32minfo\u001b[39m","message":"Nest application successfully started","time":"2024-05-24 17:32:32","timestamp":"2024-05-24T09:32:32.703Z"}
+{"context":"//////////////////////////////////////////////////","level":"\u001b[32minfo\u001b[39m","message":"第 1 次请求","time":"2024-05-24 17:32:38","timestamp":"2024-05-24T09:32:38.360Z"}
+{"context":"--------------------------------------------------","level":"\u001b[32minfo\u001b[39m","message":"请求接收","time":"2024-05-24 17:32:38","timestamp":"2024-05-24T09:32:38.360Z"}
+{"context":"/api/user","level":"\u001b[32minfo\u001b[39m","message":"127.0.0.1 GET","time":"2024-05-24 17:32:38","timestamp":"2024-05-24T09:32:38.361Z"}
+{"context":{"code":200,"data":"user server findAllUser"},"level":"\u001b[32minfo\u001b[39m","message":"响应结果","time":"2024-05-24 17:32:38","timestamp":"2024-05-24T09:32:38.384Z"}
+{"context":"--------------------------------------------------","level":"\u001b[32minfo\u001b[39m","message":"请求成功","time":"2024-05-24 17:32:38","timestamp":"2024-05-24T09:32:38.385Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"AppController {/api}:","time":"2024-05-24 17:33:56","timestamp":"2024-05-24T09:33:56.955Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api, GET} route","time":"2024-05-24 17:33:56","timestamp":"2024-05-24T09:33:56.957Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"UserController {/api/user}:","time":"2024-05-24 17:33:56","timestamp":"2024-05-24T09:33:56.957Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user, POST} route","time":"2024-05-24 17:33:56","timestamp":"2024-05-24T09:33:56.958Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user, GET} route","time":"2024-05-24 17:33:56","timestamp":"2024-05-24T09:33:56.958Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, GET} route","time":"2024-05-24 17:33:56","timestamp":"2024-05-24T09:33:56.958Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, PATCH} route","time":"2024-05-24 17:33:56","timestamp":"2024-05-24T09:33:56.959Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, DELETE} route","time":"2024-05-24 17:33:56","timestamp":"2024-05-24T09:33:56.959Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"ComicController {/api/comic}:","time":"2024-05-24 17:33:56","timestamp":"2024-05-24T09:33:56.959Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/list, GET} route","time":"2024-05-24 17:33:56","timestamp":"2024-05-24T09:33:56.960Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/search, GET} route","time":"2024-05-24 17:33:56","timestamp":"2024-05-24T09:33:56.960Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/chapter/detail, GET} route","time":"2024-05-24 17:33:56","timestamp":"2024-05-24T09:33:56.960Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/chapter, GET} route","time":"2024-05-24 17:33:56","timestamp":"2024-05-24T09:33:56.960Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/:name, GET} route","time":"2024-05-24 17:33:56","timestamp":"2024-05-24T09:33:56.960Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"TagController {/api/tag}:","time":"2024-05-24 17:33:56","timestamp":"2024-05-24T09:33:56.960Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/tag, GET} route","time":"2024-05-24 17:33:56","timestamp":"2024-05-24T09:33:56.961Z"}
+{"context":"NestApplication","level":"\u001b[32minfo\u001b[39m","message":"Nest application successfully started","time":"2024-05-24 17:33:56","timestamp":"2024-05-24T09:33:56.961Z"}
+{"context":"//////////////////////////////////////////////////","level":"\u001b[32minfo\u001b[39m","message":"第 1 次请求","time":"2024-05-24 17:34:03","timestamp":"2024-05-24T09:34:03.123Z"}
+{"context":"--------------------------------------------------","level":"\u001b[32minfo\u001b[39m","message":"请求接收","time":"2024-05-24 17:34:03","timestamp":"2024-05-24T09:34:03.123Z"}
+{"context":"/api/user","level":"\u001b[32minfo\u001b[39m","message":"127.0.0.1 GET","time":"2024-05-24 17:34:03","timestamp":"2024-05-24T09:34:03.124Z"}
+{"context":{"code":200,"data":"user server findAllUser"},"level":"\u001b[32minfo\u001b[39m","message":"响应结果","time":"2024-05-24 17:34:03","timestamp":"2024-05-24T09:34:03.153Z"}
+{"context":"--------------------------------------------------","level":"\u001b[32minfo\u001b[39m","message":"请求成功","time":"2024-05-24 17:34:03","timestamp":"2024-05-24T09:34:03.153Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"AppController {/api}:","time":"2024-05-24 17:34:19","timestamp":"2024-05-24T09:34:19.956Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api, GET} route","time":"2024-05-24 17:34:19","timestamp":"2024-05-24T09:34:19.958Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"UserController {/api/user}:","time":"2024-05-24 17:34:19","timestamp":"2024-05-24T09:34:19.958Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user, POST} route","time":"2024-05-24 17:34:19","timestamp":"2024-05-24T09:34:19.958Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user, GET} route","time":"2024-05-24 17:34:19","timestamp":"2024-05-24T09:34:19.959Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, GET} route","time":"2024-05-24 17:34:19","timestamp":"2024-05-24T09:34:19.959Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, PATCH} route","time":"2024-05-24 17:34:19","timestamp":"2024-05-24T09:34:19.960Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, DELETE} route","time":"2024-05-24 17:34:19","timestamp":"2024-05-24T09:34:19.960Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"ComicController {/api/comic}:","time":"2024-05-24 17:34:19","timestamp":"2024-05-24T09:34:19.960Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/list, GET} route","time":"2024-05-24 17:34:19","timestamp":"2024-05-24T09:34:19.960Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/search, GET} route","time":"2024-05-24 17:34:19","timestamp":"2024-05-24T09:34:19.961Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/chapter/detail, GET} route","time":"2024-05-24 17:34:19","timestamp":"2024-05-24T09:34:19.961Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/chapter, GET} route","time":"2024-05-24 17:34:19","timestamp":"2024-05-24T09:34:19.961Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/:name, GET} route","time":"2024-05-24 17:34:19","timestamp":"2024-05-24T09:34:19.961Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"TagController {/api/tag}:","time":"2024-05-24 17:34:19","timestamp":"2024-05-24T09:34:19.961Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/tag, GET} route","time":"2024-05-24 17:34:19","timestamp":"2024-05-24T09:34:19.961Z"}
+{"context":"NestApplication","level":"\u001b[32minfo\u001b[39m","message":"Nest application successfully started","time":"2024-05-24 17:34:19","timestamp":"2024-05-24T09:34:19.962Z"}
+{"context":"//////////////////////////////////////////////////","level":"\u001b[32minfo\u001b[39m","message":"第 1 次请求","time":"2024-05-24 17:34:22","timestamp":"2024-05-24T09:34:22.576Z"}
+{"context":"--------------------------------------------------","level":"\u001b[32minfo\u001b[39m","message":"请求接收","time":"2024-05-24 17:34:22","timestamp":"2024-05-24T09:34:22.576Z"}
+{"context":"/api/user","level":"\u001b[32minfo\u001b[39m","message":"127.0.0.1 GET","time":"2024-05-24 17:34:22","timestamp":"2024-05-24T09:34:22.577Z"}
+{"context":{"code":200,"data":"user server findAllUser"},"level":"\u001b[32minfo\u001b[39m","message":"响应结果","time":"2024-05-24 17:34:22","timestamp":"2024-05-24T09:34:22.606Z"}
+{"context":"--------------------------------------------------","level":"\u001b[32minfo\u001b[39m","message":"请求成功","time":"2024-05-24 17:34:22","timestamp":"2024-05-24T09:34:22.606Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"AppController {/api}:","time":"2024-05-24 17:35:23","timestamp":"2024-05-24T09:35:23.308Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api, GET} route","time":"2024-05-24 17:35:23","timestamp":"2024-05-24T09:35:23.310Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"UserController {/api/user}:","time":"2024-05-24 17:35:23","timestamp":"2024-05-24T09:35:23.310Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user, POST} route","time":"2024-05-24 17:35:23","timestamp":"2024-05-24T09:35:23.311Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user, GET} route","time":"2024-05-24 17:35:23","timestamp":"2024-05-24T09:35:23.311Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, GET} route","time":"2024-05-24 17:35:23","timestamp":"2024-05-24T09:35:23.312Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, PATCH} route","time":"2024-05-24 17:35:23","timestamp":"2024-05-24T09:35:23.312Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/user/:id, DELETE} route","time":"2024-05-24 17:35:23","timestamp":"2024-05-24T09:35:23.312Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"ComicController {/api/comic}:","time":"2024-05-24 17:35:23","timestamp":"2024-05-24T09:35:23.312Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/list, GET} route","time":"2024-05-24 17:35:23","timestamp":"2024-05-24T09:35:23.313Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/search, GET} route","time":"2024-05-24 17:35:23","timestamp":"2024-05-24T09:35:23.313Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/chapter/detail, GET} route","time":"2024-05-24 17:35:23","timestamp":"2024-05-24T09:35:23.314Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/chapter, GET} route","time":"2024-05-24 17:35:23","timestamp":"2024-05-24T09:35:23.314Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/comic/:name, GET} route","time":"2024-05-24 17:35:23","timestamp":"2024-05-24T09:35:23.314Z"}
+{"context":"RoutesResolver","level":"\u001b[32minfo\u001b[39m","message":"TagController {/api/tag}:","time":"2024-05-24 17:35:23","timestamp":"2024-05-24T09:35:23.314Z"}
+{"context":"RouterExplorer","level":"\u001b[32minfo\u001b[39m","message":"Mapped {/api/tag, GET} route","time":"2024-05-24 17:35:23","timestamp":"2024-05-24T09:35:23.314Z"}
+{"context":"NestApplication","level":"\u001b[32minfo\u001b[39m","message":"Nest application successfully started","time":"2024-05-24 17:35:23","timestamp":"2024-05-24T09:35:23.315Z"}
+{"context":"//////////////////////////////////////////////////","level":"\u001b[32minfo\u001b[39m","message":"第 1 次请求","time":"2024-05-24 17:35:26","timestamp":"2024-05-24T09:35:26.094Z"}
+{"context":"--------------------------------------------------","level":"\u001b[32minfo\u001b[39m","message":"请求接收","time":"2024-05-24 17:35:26","timestamp":"2024-05-24T09:35:26.094Z"}
+{"context":"/api/user","level":"\u001b[32minfo\u001b[39m","message":"127.0.0.1 GET","time":"2024-05-24 17:35:26","timestamp":"2024-05-24T09:35:26.095Z"}
+{"context":{"code":200,"data":"user server findAllUser"},"level":"\u001b[32minfo\u001b[39m","message":"响应结果","time":"2024-05-24 17:35:26","timestamp":"2024-05-24T09:35:26.111Z"}
+{"context":"--------------------------------------------------","level":"\u001b[32minfo\u001b[39m","message":"请求成功","time":"2024-05-24 17:35:26","timestamp":"2024-05-24T09:35:26.111Z"}
