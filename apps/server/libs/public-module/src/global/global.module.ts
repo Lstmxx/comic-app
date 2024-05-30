@@ -5,7 +5,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { ClientsModule, Transport } from '@nestjs/microservices';
 // import { ServeStaticModule } from '@nestjs/serve-static';
 // import { MulterModule } from '@nestjs/platform-express';
-// import { TypeOrmModule } from '@nestjs/typeorm';
+import { TypeOrmModule } from '@nestjs/typeorm';
 
 import { rootPath } from '@app/public-tool';
 import { LoggerModule } from '../logger';
@@ -118,15 +118,16 @@ export class GlobalModule {
 
     // 启动 orm 模块
     if (typeorm) {
-      // imports.push(
-      //   TypeOrmModule.forRootAsync({
-      //     useFactory: (configService: ConfigService) => {
-      //       const db = configService.get('db');
-      //       return { ...db, autoLoadEntities: true };
-      //     },
-      //     inject: [ConfigService],
-      //   }),
-      // );
+      imports.push(
+        TypeOrmModule.forRootAsync({
+          useFactory: (configService: ConfigService) => {
+            const db = configService.get('db');
+            console.log('db', db);
+            return { ...db, autoLoadEntities: true };
+          },
+          inject: [ConfigService],
+        }),
+      );
     }
 
     // // 开启文件上传

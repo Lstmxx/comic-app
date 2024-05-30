@@ -13,6 +13,7 @@ import { CustomHttpModule, GlobalModule } from '@app/public-module';
       microservice: true,
       serverName: 'server',
       cache: true,
+      typeorm: true,
       // upload: true,
       // aliOss: true,
     }),

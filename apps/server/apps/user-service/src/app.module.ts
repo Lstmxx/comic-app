@@ -8,6 +8,7 @@ import { UserModule } from './user/user.module';
       yamlFilePath: ['apps/use-server.yaml'],
       serverName: 'user-service',
       cache: true,
+      typeorm: true,
       // upload: true,
       // aliOss: true,
     }),
