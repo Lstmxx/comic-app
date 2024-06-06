@@ -3,6 +3,7 @@ import {
   NestInterceptor,
   ExecutionContext,
   CallHandler,
+  HttpException,
 } from '@nestjs/common';
 import { RedisContext, TcpContext } from '@nestjs/microservices';
 import { Observable } from 'rxjs';
@@ -68,7 +69,27 @@ export class TransformInterceptor<T>
       this.loggerService.log(`${toIp(clientIp)} ${method}`, url);
       Object.keys(body).length && this.loggerService.log('请求参数', body);
       // 响应参数转化为统一格式
-      resNext = resNext.pipe(map((data) => ({ code: res.statusCode, data })));
+      resNext = resNext.pipe(
+        map((data) => {
+          console.log('data', data);
+          if (!data) {
+            return data;
+          }
+          const { code, results, message } = data;
+          if (results) {
+            if (code !== 200) {
+              throw new HttpException(message, code);
+            }
+            return {
+              code,
+              message,
+              data: results,
+            };
+          }
+          console.log('origin data', data);
+          return data;
+        }),
+      );
     }
 
     return resNext.pipe(

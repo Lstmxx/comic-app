@@ -33,6 +33,8 @@ export default async function Content({
     errorMsg = "漫画列表获取失败";
   }
 
+  console.log("comicPageData", comicPageData);
+
   return (
     <>
       <ScrollArea>

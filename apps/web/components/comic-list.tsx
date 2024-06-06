@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 
 export default function ComicList({ list }: { list: IComicItem[] }) {
   const [comicList, setComicList] = useState<IComicItem[]>([]);
+  console.log("list", list);
 
   useEffect(() => {
     setComicList(list);

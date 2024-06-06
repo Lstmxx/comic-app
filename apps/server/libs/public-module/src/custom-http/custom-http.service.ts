@@ -4,18 +4,20 @@ import { Response } from './type';
 
 const VERSION = 'v3';
 
+const COPY_APP_VERSION = '2.2.0';
+
 export const DEFAULT_HEADERS = {
   // origin: 'https://copymanga.site',
-  referer: 'com.copymanga.app-2.1.7',
+  referer: `com.copymanga.app-${COPY_APP_VERSION}`,
   accept: 'application/json',
   'sec-fetch-mode': 'cors',
   'sec-fetch-dest': 'empty',
   'sec-fetch-site': 'cross-site',
   source: 'copyApp',
   platform: '3',
-  'user-agent': 'COPY/2.1.7',
+  'user-agent': `COPY/${COPY_APP_VERSION}`,
   webp: '1',
-  version: '2.1.7',
+  version: COPY_APP_VERSION,
   // device: 'QSR1.210802.001',
 };
 
