@@ -5,7 +5,16 @@
   "compilerOptions": {
     "deleteOutDir": true,
     "webpack": true,
-    "tsConfigPath": "apps/server/tsconfig.app.json"
+    "tsConfigPath": "apps/server/tsconfig.app.json",
+    "assets": [
+      {
+        "include": "**/*.proto"
+      },
+      {
+        "include": "*.proto"
+      }
+    ],
+    "watchAssets": true
   },
   "monorepo": true,
   "root": "apps/server",
@@ -53,6 +62,24 @@
       "sourceRoot": "libs/public-tool/src",
       "compilerOptions": {
         "tsConfigPath": "libs/public-tool/tsconfig.lib.json"
+      }
+    },
+    "microservices": {
+      "type": "library",
+      "root": "libs/microservices",
+      "entryFile": "index",
+      "sourceRoot": "libs/microservices/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/microservices/tsconfig.lib.json"
+      }
+    },
+    "public-entity": {
+      "type": "library",
+      "root": "libs/public-entity",
+      "entryFile": "index",
+      "sourceRoot": "libs/public-entity/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/public-entity/tsconfig.lib.json"
       }
     }
   }

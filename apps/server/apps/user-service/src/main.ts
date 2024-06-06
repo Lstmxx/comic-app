@@ -1,12 +1,6 @@
 import { microserviceBootstrap } from '@app/public-tool';
 import { AppModule } from './app.module';
-import { Transport } from '@nestjs/microservices';
+import { options } from '@app/microservices/use-service';
 
 // 启动服务
-microserviceBootstrap(AppModule, {
-  transport: Transport.REDIS,
-  options: {
-    host: 'localhost',
-    port: 6379,
-  },
-});
+microserviceBootstrap(AppModule, options);

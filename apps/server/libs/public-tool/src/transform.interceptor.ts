@@ -29,11 +29,16 @@ export class TransformInterceptor<T>
 {
   constructor(private readonly loggerService: LoggerService) {}
 
-  intercept(
-    context: ExecutionContext,
-    next: CallHandler,
-  ): Observable<Response<T>> {
+  handleRpc(context: ExecutionContext, next: CallHandler) {
+    const rpcCtx = context.switchToRpc();
+    this.loggerService.log('RPC 请求', rpcCtx.getContext());
+    this.loggerService.log('请求参数', rpcCtx.getData());
+    return next.handle();
+  }
+
+  handleHttp(context: ExecutionContext, next: CallHandler) {
     const ctx = context.switchToHttp();
+
     const req = ctx.getRequest();
     const res = ctx.getResponse();
 
@@ -72,5 +77,20 @@ export class TransformInterceptor<T>
         this.loggerService.log('请求成功', line);
       }),
     );
+  }
+
+  intercept(
+    context: ExecutionContext,
+    next: CallHandler,
+  ): Observable<Response<T>> {
+    const type = context.getType();
+
+    if (type === 'rpc') {
+      return this.handleRpc(context, next);
+    } else if (type === 'http') {
+      return this.handleHttp(context, next);
+    }
+    // ws先不处理
+    return next.handle();
   }
 }

@@ -2,7 +2,7 @@ import { APP_PIPE } from '@nestjs/core';
 import { Module, DynamicModule, ValidationPipe } from '@nestjs/common';
 // import { CacheModule } from '@nestjs/cache-manager';
 import { ConfigModule, ConfigService } from '@nestjs/config';
-import { ClientsModule, Transport } from '@nestjs/microservices';
+import { ClientsModule } from '@nestjs/microservices';
 // import { ServeStaticModule } from '@nestjs/serve-static';
 // import { MulterModule } from '@nestjs/platform-express';
 import { TypeOrmModule } from '@nestjs/typeorm';
@@ -20,14 +20,14 @@ import { join } from 'path';
 // import { diskStorage } from 'multer';
 import { load } from 'js-yaml';
 import { merge, cloneDeepWith } from 'lodash';
-import { MICRO_SERVICE_CLIENT_PROXY } from './constant';
+import { serviceList } from '@app/microservices';
 // import moment from 'moment';
 // import nuid from 'nuid';
 
 export interface GlobalModuleOptions {
   serverName: string;
   yamlFilePath?: string[]; // 配置文件路径
-  microservice?: boolean; // 是否链接微服务
+  microservice?: string[]; // 是否链接微服务
   typeorm?: boolean; // 开启 orm 模块
   upload?: boolean; // 开启文件上传模块
   cache?: boolean; // 开启缓存模块
@@ -48,7 +48,7 @@ export class GlobalModule {
       yamlFilePath = [],
       typeorm,
       serverName,
-      microservice,
+      microservice = [],
       // upload,
       // cache,
       // aliSms,
@@ -97,23 +97,18 @@ export class GlobalModule {
       }),
     ];
 
-    if (microservice) {
-      imports.push({
-        ...ClientsModule.registerAsync([
-          {
-            name: MICRO_SERVICE_CLIENT_PROXY,
-            useFactory: (configService: ConfigService) => {
-              const options = configService.get('cache.redis');
-              return {
-                transport: Transport.REDIS,
-                options,
-              };
-            },
-            inject: [ConfigService],
-          },
-        ]),
-        global: true,
-      });
+    if (microservice.length) {
+      const microserviceList = serviceList.filter((item) =>
+        microservice.includes(item.name as string),
+      );
+      if (microserviceList.length) {
+        imports.push({
+          ...ClientsModule.register(
+            microserviceList.map((item) => ({ ...item })),
+          ),
+          global: true,
+        });
+      }
     }
 
     // 启动 orm 模块
@@ -224,8 +219,6 @@ export class GlobalModule {
     //     }),
     //   );
     // }
-
-    console.log('GlobalModule', imports);
 
     return {
       module: GlobalModule,

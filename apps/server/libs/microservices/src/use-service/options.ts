@@ -1,0 +1,29 @@
+import {
+  ClientProviderOptions,
+  MicroserviceOptions,
+  Transport,
+} from '@nestjs/microservices';
+import { join } from 'path';
+import { USER_PACKAGE_NAME } from './user';
+
+const protoPath = join(
+  process.cwd(),
+  `/dist/libs/microservices/use-service/user.proto`,
+);
+
+export const options: MicroserviceOptions = {
+  transport: Transport.GRPC,
+  options: {
+    package: USER_PACKAGE_NAME,
+    protoPath: protoPath,
+  },
+};
+
+export const registerOption: ClientProviderOptions = {
+  name: USER_PACKAGE_NAME,
+  transport: Transport.GRPC,
+  options: {
+    package: USER_PACKAGE_NAME,
+    protoPath: protoPath,
+  },
+};
