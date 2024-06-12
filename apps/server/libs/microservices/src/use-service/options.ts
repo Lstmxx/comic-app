@@ -11,10 +11,13 @@ const protoPath = join(
   `/dist/libs/microservices/use-service/user.proto`,
 );
 
+// const URL = 'localhost:50051';
+
 export const options: MicroserviceOptions = {
   transport: Transport.GRPC,
   options: {
     package: USER_PACKAGE_NAME,
+    // url: URL,
     protoPath: protoPath,
   },
 };
@@ -24,6 +27,7 @@ export const registerOption: ClientProviderOptions = {
   transport: Transport.GRPC,
   options: {
     package: USER_PACKAGE_NAME,
+    // url: URL,
     protoPath: protoPath,
   },
 };

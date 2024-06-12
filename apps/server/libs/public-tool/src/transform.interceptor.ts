@@ -72,9 +72,11 @@ export class TransformInterceptor<T>
       resNext = resNext.pipe(
         map((data) => {
           console.log('data', data);
-          if (!data) {
+          if (data === null || data === undefined) {
             return data;
           }
+
+          // 处理拷贝漫画的返回
           const { code, results, message } = data;
           if (results) {
             if (code !== 200) {
@@ -85,9 +87,13 @@ export class TransformInterceptor<T>
               message,
               data: results,
             };
+          } else {
+            return {
+              code: code ?? 200,
+              message: message ?? '请求成功',
+              data,
+            };
           }
-          console.log('origin data', data);
-          return data;
         }),
       );
     }

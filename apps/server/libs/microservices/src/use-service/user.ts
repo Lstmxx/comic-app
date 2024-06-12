@@ -11,7 +11,7 @@ import { Observable } from "rxjs";
 export const protobufPackage = "user";
 
 export interface LoginRequest {
-  username: string;
+  email: string;
   password: string;
 }
 
@@ -19,19 +19,34 @@ export interface LoginResponse {
   token: string;
 }
 
+export interface RegisterRequest {
+  email: string;
+  username: string;
+  password: string;
+}
+
+export interface RegisterResponse {
+  success: boolean;
+  message: string;
+}
+
 export const USER_PACKAGE_NAME = "user";
 
 export interface UserServiceClient {
   login(request: LoginRequest): Observable<LoginResponse>;
+
+  register(request: RegisterRequest): Observable<RegisterResponse>;
 }
 
 export interface UserServiceController {
   login(request: LoginRequest): Promise<LoginResponse> | Observable<LoginResponse> | LoginResponse;
+
+  register(request: RegisterRequest): Promise<RegisterResponse> | Observable<RegisterResponse> | RegisterResponse;
 }
 
 export function UserServiceControllerMethods() {
   return function (constructor: Function) {
-    const grpcMethods: string[] = ["login"];
+    const grpcMethods: string[] = ["login", "register"];
     for (const method of grpcMethods) {
       const descriptor: any = Reflect.getOwnPropertyDescriptor(constructor.prototype, method);
       GrpcMethod("UserService", method)(constructor.prototype[method], method, descriptor);

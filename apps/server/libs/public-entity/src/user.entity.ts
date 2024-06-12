@@ -1,3 +1,4 @@
+import { YES_OR_NO } from '@app/constant';
 import {
   Column,
   CreateDateColumn,
@@ -8,18 +9,20 @@ import {
 
 @Entity()
 export class User {
-  @PrimaryGeneratedColumn()
-  id: number;
+  @PrimaryGeneratedColumn('uuid')
+  id: string;
 
   @Column({
     length: 50,
     comment: '用户名',
+    nullable: false,
   })
   username: string;
 
   @Column({
     length: 50,
     comment: '头像',
+    default: '',
   })
   avatar: string;
 
@@ -31,8 +34,10 @@ export class User {
   email: string;
 
   @Column({
-    length: 50,
+    type: 'char',
+    length: 60,
     comment: '密码',
+    nullable: false,
   })
   password: string;
 
@@ -47,8 +52,10 @@ export class User {
   updateTime: Date;
 
   @Column({
+    type: 'enum',
+    enum: YES_OR_NO,
     comment: '是否删除',
-    default: 0,
+    default: YES_OR_NO.NO,
   })
-  isDelete: number;
+  isDelete: string;
 }

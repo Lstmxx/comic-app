@@ -28,22 +28,22 @@ export class AllExceptionFilter implements ExceptionFilter {
     let msg;
 
     if (exception instanceof HttpException) {
+      console.log('HttpException', exception);
       const res = exception.getResponse();
-      if (typeof res !== 'string') {
-        const {
-          statusCode = exception.getStatus(),
-          message,
-          error: err = message,
-        } = res as any;
+      if (typeof res === 'string') {
+        code = exception.getStatus();
+        error = res;
+        msg = res;
+      } else {
+        const { statusCode } = res as any;
         code = statusCode;
-        error = err;
-        msg = Array.isArray(message) ? message[0] : message;
+
+        let { message } = res as any;
+        message = typeof message === 'string' ? [message] : message;
+
+        error = message[0];
+        msg = message[0];
       }
-    } else if (exception.response) {
-      const { statusCode, message, error: err = message } = exception.response;
-      code = statusCode;
-      error = err;
-      msg = Array.isArray(message) ? message[0] : message;
     } else {
       this.loggerService.error('服务运行错误', errorLog);
     }
