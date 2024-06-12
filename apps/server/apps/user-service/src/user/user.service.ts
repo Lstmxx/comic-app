@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { User } from '@app/public-entity';
-import { RegisterRequest } from '@app/microservices/use-service';
+import { LoginRequest, RegisterRequest } from '@app/microservices/use-service';
 import * as bcrypt from 'bcryptjs';
 
 @Injectable()
@@ -47,5 +47,26 @@ export class UserService {
     const user = await this.createUser(request);
 
     return user;
+  }
+
+  validateLoginUser(user: User | null, email: string, password: string) {
+    if (!user) {
+      throw new Error('用户不存在');
+    }
+
+    if (!bcrypt.compareSync(password, user.password)) {
+      throw new Error('密码错误');
+    }
+  }
+
+  async login(request: LoginRequest) {
+    const { email, password } = request;
+
+    const user = await this.userRepository.findOne({
+      where: {
+        email,
+      },
+    });
+    this.validateLoginUser(user, email, password);
   }
 }
